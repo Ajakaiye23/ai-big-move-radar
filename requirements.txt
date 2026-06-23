@@ -1,0 +1,28 @@
+# Core (required to run the pipeline)
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.3
+scipy>=1.11
+matplotlib>=3.7
+pyyaml>=6.0
+xgboost>=2.0
+
+# Live data (optional — pipeline runs offline with the synthetic generator without these)
+yfinance>=0.2          # prices/options/^VIX/sector ETFs
+praw>=7.7              # Reddit
+requests>=2.31         # finnhub, edgar, alpha vantage, gdelt REST calls
+pytrends>=4.9          # google trends
+
+# Finance NLP (optional — finance-lexicon fallback used when absent)
+transformers>=4.40     # FinBERT (ProsusAI/finbert)
+torch>=2.2             # FinBERT backend
+
+# Explainability (optional — XGBoost gain importances used as fallback)
+shap>=0.44
+
+# Tests
+pytest>=7.4
+
+# Optional extras
+# catboost            # alternative tabular model
+# pyarrow             # parquet IO (CSV used by default)

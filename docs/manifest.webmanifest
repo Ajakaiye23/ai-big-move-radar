@@ -1,0 +1,10 @@
+{
+  "name": "AI Stock Sentiment Tracker",
+  "short_name": "Sentiment Tracker",
+  "description": "Experimental directional signal tracker — not financial advice.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0e1117",
+  "theme_color": "#0e1117",
+  "icons": []
+}

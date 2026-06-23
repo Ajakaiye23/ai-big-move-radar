@@ -1,0 +1,29 @@
+{
+  "as_of": "2026-06-18",
+  "universe_sentiment": 0.1437,
+  "top_bullish": [
+    "DIS",
+    "GME",
+    "NIO"
+  ],
+  "top_bearish": [
+    "SOFI",
+    "COIN",
+    "AMC"
+  ],
+  "upcoming_earnings": [],
+  "sector_heatmap": {
+    "tech": 1.0,
+    "consumer": 0.75,
+    "software": 1.0,
+    "meme": 0.5,
+    "semis": 0.222,
+    "industrial": 1.0,
+    "crypto": 0.5,
+    "media": 1.0,
+    "fintech": 0.333,
+    "financials": 1.0,
+    "auto": 0.25,
+    "etf": 1.0
+  }
+}

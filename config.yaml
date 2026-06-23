@@ -1,0 +1,112 @@
+# ── Project configuration: the single source of truth ──
+# Change values here, never hardcode them in code.
+
+project:
+  name: ai-stock-sentiment
+  seed: 42                      # fix everywhere for reproducibility
+
+# Two scopes:
+#  - core_study: the few tickers used for the rigorous ablation/backtest (prove the engine).
+#  - universe:   the ~20-40 stock tracker, rolled out AFTER the engine clears baselines.
+# Start with ONE core ticker, prove the pipeline end-to-end, then widen.
+core_study: [AAPL, TSLA, NVDA, AMD]
+# Curated ~40-name universe: liquid + heavy news/social chatter so sentiment
+# coverage exists. Expand here (S&P-tier), NOT to the whole market — see
+# references/methodology.md on the multiple-comparisons trap.
+# NOTE on live cost: each ticker = more yfinance + Finnhub calls + FinBERT
+# scoring. Offline handles all 40 instantly; a LIVE run scales ~linearly, so for
+# fast live refreshes use core_study or a subset (or lower MAX_NEWS_PER_TICKER).
+universe: [AAPL, MSFT, NVDA, AMD, TSLA, AMZN, GOOGL, META, AVGO, NFLX,
+           ORCL, CRM, ADBE, CSCO, QCOM, INTC, MU, MRVL, ARM, SMCI,
+           AMC, GME, PLTR, COIN, SOFI, HOOD, MSTR, RIVN, LCID, NIO,
+           UBER, ABNB, SHOP, PYPL, DIS, BA, JPM, WMT, COST,
+           SPY, QQQ]
+
+data:
+  start: "2021-01-01"
+  end:   "2024-12-31"            # frozen training/eval window
+  knowledge_cutoff_et: "16:00"   # text after this ET time -> NEXT session (lag rule)
+  subreddits: [investing, stocks, wallstreetbets]
+  # `mode` controls where data comes from:
+  #   offline  -> deterministic synthetic generator (no network, reproducible, for CI/demo)
+  #   live     -> yfinance prices + Finnhub/Reddit/GDELT text behind API keys
+  #   auto     -> try live, fall back to offline per-source
+  mode: offline
+  # Each source = an ablatable feature group; flip on/off and let the ablation decide.
+  sources:
+    prices_yfinance:   true      # OHLCV, options chains, ^VIX, sector ETFs
+    finnhub:           true      # news, earnings cal+surprises, analyst, insider, transcripts
+    sec_edgar:         true      # Form 4 insider, 8-K
+    options:           true      # put/call ratio, implied volatility
+    short_interest:    true      # FINRA/Finnhub
+    regime_fred:       true      # rates, yield curve, macro
+    reddit:            true
+    news_gdelt:        false     # wired + free, but our IP is 429-throttled now; flip true when clear
+    alphavantage_news: true      # pre-scored sentiment (cross-check vs FinBERT); needs ALPHAVANTAGE_API_KEY
+    google_trends:     true
+    wikipedia_views:   true
+    stocktwits:        false     # paid; official API closed to new signups
+    twitter_x:         false     # no usable free API tier
+
+target:
+  horizon_days: 1               # predict next-session move
+  # binary (up/down) | three_class (down/flat/up) | big_move (will it move BIG?)
+  # big_move is the useful one: direction is ~random, but volatility clusters and
+  # IS predictable, so "is an outsized move coming?" actually has signal.
+  type: big_move
+  dead_band: 0.0                # for three_class: |return| < this => "flat" (e.g. 0.003)
+  big_move_k: 1.5               # big_move: |next return| > k x longer-run daily vol
+  big_move_vol_window: 60       # baseline vol window (longer than the 5/10/20d features)
+
+split:
+  method: walk_forward          # NEVER random k-fold on time series
+  test_fraction: 0.15           # final, untouched evaluation period
+  val_fraction: 0.15
+  walk_forward_folds: 5         # TimeSeriesSplit folds for tuning on the training period
+
+backtest:
+  transaction_cost_bps: 7       # round-trip cost assumption
+  trade_on: next_open           # act on the session after the signal
+
+sentiment:
+  model: ProsusAI/finbert       # finance-tuned; VADER/lexicon as fallback/comparison
+  signed_score: p_pos_minus_p_neg
+
+model:
+  primary: xgboost              # catboost alternative; lstm optional comparison
+  calibrate: true              # calibrate probabilities so confidence is meaningful
+  class_weighting: true        # markets drift up -> handle imbalance
+  exclude_earnings_days: true  # flag/exclude outlier event days
+  tune: true                   # walk-forward hyperparameter search (vs fixed xgb params)
+  tune_iters: 12               # random-search trials on training folds only
+  xgb:
+    n_estimators: 400
+    max_depth: 4
+    learning_rate: 0.03
+    subsample: 0.8
+    colsample_bytree: 0.8
+    min_child_weight: 5
+    early_stopping_rounds: 40
+
+eval:
+  baselines: [persistence, majority_class, buy_and_hold]
+  ablate_feature_groups: true  # test which sources actually help on held-out data
+  leakage_tests: true          # no-lookahead, split-order, label-shuffle in CI
+
+monitoring:
+  retrain_if_hitrate_below: 0.50   # rolling-window drift trigger (deliberate, versioned)
+  rolling_window_days: 60
+
+tracker:
+  model_scope: pooled          # pooled (one model + ticker feature) or per_ticker
+  rank_by: confidence          # dashboard sorts the watchlist by this
+  conviction_threshold: 0.58   # only calls at/above this calibrated confidence are "conviction"
+  paper_start_cash: 10000      # live paper-trading portfolio seed
+  prediction_log: docs/data/prediction_log.json   # append-only live track record
+
+paths:
+  raw:        data/raw
+  processed:  data/processed
+  artifacts:  artifacts
+  site_data:  docs/data         # JSON the dashboard reads
+  reports:    reports

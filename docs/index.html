@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>AI Stock Sentiment Tracker</title>
+  <meta name="description" content="Experimental directional signal tracker — does social sentiment add predictive signal beyond price/volume? Not financial advice."/>
+  <link rel="manifest" href="manifest.webmanifest"/>
+  <meta name="theme-color" content="#0e1117"/>
+  <link rel="stylesheet" href="assets/style.css?v=8"/>
+</head>
+<body data-theme="dark">
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">◐</span>
+      <div>
+        <h1>AI Stock Sentiment Tracker</h1>
+        <p class="tagline">Does social sentiment beat price alone at calling next-session direction?</p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <span id="freshness" class="freshness">loading…</span>
+      <button id="theme-toggle" class="ghost-btn" title="Toggle theme">☾</button>
+    </div>
+  </header>
+
+  <div class="disclaimer" id="disclaimer">
+    ⚠️ Experimental research project — <strong>not financial advice</strong>. Backtest ≠ live performance.
+    This is a signal tracker, never a "stocks to buy" list.
+  </div>
+
+  <main>
+    <!-- 1. Aggregate banner -->
+    <section class="banner" id="aggregate-banner">
+      <div class="banner-card">
+        <div class="big-stat" id="agg-hitrate">–</div>
+        <div class="stat-label">live aggregate hit-rate <span id="agg-n"></span></div>
+        <div class="baseline-note">coin-flip baseline ≈ 50%</div>
+      </div>
+      <div class="banner-card">
+        <div class="big-stat" id="paper-value">–</div>
+        <div class="stat-label">paper portfolio (model)</div>
+        <div class="baseline-note" id="paper-bh">buy &amp; hold: –</div>
+      </div>
+      <div class="banner-card">
+        <div class="big-stat" id="mood-stat">–</div>
+        <div class="stat-label">today's universe mood</div>
+        <div class="baseline-note" id="mode-note"></div>
+      </div>
+    </section>
+
+    <!-- Big takeaways -->
+    <section class="panel" id="takeaways">
+      <h2>Big takeaways <span class="hint">what this project actually found — the honest version</span></h2>
+      <div class="takeaways" id="takeaways-grid"></div>
+    </section>
+
+    <!-- How it works -->
+    <section class="panel howto" id="how-it-works">
+      <h2>How it works <span class="hint">the method, in plain language</span></h2>
+      <p class="howto-lead">
+        This project tests one question: <strong>does what people say about a stock online
+        add any predictive power beyond what its price and volume already tell you?</strong>
+        It's built in two layers — a rigorously validated <em>engine</em>, and a <em>tracker</em>
+        that puts the engine to work in public.
+      </p>
+      <div class="steps">
+        <div class="step"><span class="step-n">1</span><h3>Direction, not price</h3>
+          <p>Predicting tomorrow's exact price looks impressive but is mostly an illusion —
+          tomorrow ≈ today, so you get a high score for learning nothing. Instead the model makes
+          a humble binary call: <strong>up or down next session</strong>. Chance is ~50%, so any
+          real edge is honest and visible.</p></div>
+        <div class="step"><span class="step-n">2</span><h3>It has to beat dumb baselines</h3>
+          <p>A model only "works" if it beats trivial rules: <em>persistence</em> (tomorrow = today's
+          direction), <em>majority class</em> (always guess the common one), and <em>buy-and-hold</em>.
+          We report all three next to the model — beating accuracy but losing to buy-and-hold is a
+          real, reported outcome.</p></div>
+        <div class="step"><span class="step-n">3</span><h3>The sentiment ablation</h3>
+          <p>The headline experiment: train the <em>same</em> model with and without the sentiment
+          features and compare. The difference is the answer. We repeat it across time windows
+          (walk-forward) so it's not one lucky split, and we test every data group — not just
+          "does sentiment help?" but "<em>which</em> signals help?"</p></div>
+        <div class="step"><span class="step-n">4</span><h3>No peeking at the future</h3>
+          <p>The cardinal sin in finance ML is letting the model see information it wouldn't have had.
+          We split strictly by time, fit every scaler on the past only, build features causally, and
+          lag after-hours news to the <em>next</em> session. Automated tests fail the build if any
+          leakage sneaks in.</p></div>
+        <div class="step"><span class="step-n">5</span><h3>FinBERT reads the text</h3>
+          <p>Each post or headline is scored by <strong>FinBERT</strong>, a model fine-tuned on
+          financial language (so it knows "beat" and "short" aren't ordinary words), then collapsed
+          into daily per-stock features: average sentiment, disagreement, volume, momentum.</p></div>
+        <div class="step"><span class="step-n">6</span><h3>A live, un-fakeable track record</h3>
+          <p>Every day the frozen model logs a prediction for each stock <em>before</em> the outcome is
+          known, then reconciles it later. That append-only log — shown here as hit-rates and a paper
+          portfolio — can't be cherry-picked after the fact. We always lead with the
+          <strong>universe-wide aggregate</strong>, never a lucky single stock.</p></div>
+      </div>
+      <p class="howto-foot">
+        Confidence is calibrated (a "70%" call really does mean ~70%), and the whole pipeline reruns
+        from one config file with a fixed seed. <strong>It's a signal tracker, not advice.</strong>
+      </p>
+    </section>
+
+    <!-- 2. Paper portfolio vs buy-and-hold -->
+    <section class="panel">
+      <h2>Live paper portfolio <span class="hint">follows the model's signals from launch vs buy-and-hold</span></h2>
+      <div id="portfolio-chart" class="chart"></div>
+    </section>
+
+    <!-- 3. Ranked watchlist -->
+    <section class="panel">
+      <h2>Ranked watchlist <span class="hint">sorted by model confidence — every row shows its real hit-rate</span></h2>
+      <div class="controls">
+        <label class="toggle"><input type="checkbox" id="sentiment-toggle" checked/> use sentiment group</label>
+        <span class="controls-note" id="toggle-note"></span>
+      </div>
+      <table id="watchlist">
+        <thead><tr>
+          <th>#</th><th>Ticker</th><th>Sector</th><th>Call</th>
+          <th>Confidence</th><th>Price</th><th>Sentiment (20d)</th><th>Hit-rate</th><th>Why</th><th>Trade</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- Your paper portfolio (you trade fake money) -->
+    <section class="panel" id="paper-trade">
+      <h2>Your paper portfolio <span class="hint">trade fake money against the model — saved in your browser</span></h2>
+      <div class="pt-summary">
+        <div class="pt-stat"><div class="pt-big" id="pt-total">$—</div><div class="pt-label">total value</div></div>
+        <div class="pt-stat"><div class="pt-big" id="pt-cash">$—</div><div class="pt-label">cash</div></div>
+        <div class="pt-stat"><div class="pt-big" id="pt-pnl">—</div><div class="pt-label">profit / loss</div></div>
+        <div class="pt-stat"><div class="pt-big" id="pt-vs">—</div><div class="pt-label">your return vs the model</div></div>
+      </div>
+      <div class="pt-actions">
+        <label class="pt-tradesize">$ per trade
+          <input type="number" id="pt-amount" value="5000" min="1" step="500"/>
+        </label>
+        <button id="pt-follow" class="pt-btn primary">🤖 Follow model's conviction picks</button>
+        <button id="pt-reset" class="pt-btn">↺ Reset to $100k</button>
+        <span class="pt-note" id="pt-msg"></span>
+      </div>
+      <table id="pt-holdings">
+        <thead><tr><th>Ticker</th><th>Shares</th><th>Avg cost</th><th>Price</th><th>Value</th><th>P/L</th><th></th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <p class="pt-fine">Fake money, for learning only. Trades fill at the latest daily close; the "vs the model"
+        figure compares your total return to the model paper portfolio's return over its run. Not financial advice.</p>
+    </section>
+
+    <div class="grid-2">
+      <!-- 4. Scoreboard -->
+      <section class="panel">
+        <h2>Scoreboard</h2>
+        <div id="scoreboard"></div>
+      </section>
+
+      <!-- 5. Beat the Model -->
+      <section class="panel">
+        <h2>Beat the Model <span class="hint">guess before the model reveals its call</span></h2>
+        <div id="game"></div>
+      </section>
+    </div>
+
+    <div class="grid-2">
+      <!-- 6. Calibration -->
+      <section class="panel">
+        <h2>Confidence calibration <span class="hint">when it says 70%, is it right 70%?</span></h2>
+        <div id="calibration-chart" class="chart small"></div>
+      </section>
+
+      <!-- 7. Market mood / sector heatmap -->
+      <section class="panel">
+        <h2>Today's market mood</h2>
+        <div id="market-mood"></div>
+        <h3>Sector heatmap <span class="hint">share of stocks the model calls up</span></h3>
+        <div id="sector-heatmap" class="heatmap"></div>
+      </section>
+    </div>
+
+    <!-- 8. Frozen-model evidence (static, from training/eval) -->
+    <section class="panel">
+      <h2>The engine: how it was validated <span class="hint">frozen model, untouched test period</span></h2>
+      <div class="grid-2">
+        <div><h3>Feature-group ablation</h3><img class="figure" src="assets/ablation.png" alt="ablation"/></div>
+        <div><h3>Backtest vs buy-and-hold</h3><img class="figure" src="assets/backtest.png" alt="backtest"/></div>
+        <div><h3>Calibration (test)</h3><img class="figure" src="assets/calibration.png" alt="calibration"/></div>
+        <div><h3>Feature attribution</h3><img class="figure" src="assets/importances.png" alt="importances"/></div>
+      </div>
+      <div id="ablation-summary" class="ablation-summary"></div>
+      <p class="modelcard-link">📄 <a href="../reports/model_card.md">Model card</a> — intended use, training window, limitations.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with the AI-stock-sentiment methodology: predict <em>direction not price</em>, beat baselines,
+       no leakage, honest ablation. <span id="footer-mode"></span></p>
+    <p class="fine">Not financial advice. For research and education only.</p>
+  </footer>
+
+  <script src="assets/app.js?v=9"></script>
+</body>
+</html>

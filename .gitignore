@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Data: raw pulls are reproducible from sources; keep them out of git if large.
+data/raw/**
+data/processed/**
+!data/**/.gitkeep
+
+# The FROZEN model artifacts MUST be committed — the daily Action loads them
+# (it never retrains). They're small (a pooled XGBoost bundle + metadata).
+# Nothing to ignore here; listed explicitly for clarity:
+#   artifacts/model_bundle.pkl  artifacts/meta.json  artifacts/feature_list.json
+
+# Caches
+.cache/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

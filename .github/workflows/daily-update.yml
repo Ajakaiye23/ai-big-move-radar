@@ -1,0 +1,61 @@
+name: daily-update
+
+# Runs after US market close on weekdays; also runnable on demand.
+# Loads the FROZEN model committed under artifacts/ and runs it on fresh data.
+# It does NOT retrain — retraining is a separate, deliberate, versioned step.
+on:
+  schedule:
+    - cron: "0 22 * * 1-5"   # 22:00 UTC ~ after US close (adjust for DST)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write       # to commit refreshed JSON
+  pages: write          # if using the Pages deploy action
+  id-token: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Cache pip deps AND the FinBERT weights so daily runs stay fast.
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.cache/huggingface
+          key: deps-${{ hashFiles('requirements.txt') }}-finbert
+
+      - run: pip install -r requirements.txt
+
+      # Refresh chain: pull fresh data -> align -> score sentiment -> build
+      # features -> run the FROZEN model and reconcile/predict. No training step.
+      # With no API secrets set, the pipeline falls back to offline/synthetic data
+      # so the workflow still succeeds on a fork (set data.mode: live + secrets for
+      # real markets). FRESH_END lets the daily run pull data up to today.
+      - name: Run frozen model on fresh data
+        env:
+          REDDIT_CLIENT_ID:     ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USER_AGENT:    ai-stock-sentiment/0.1
+          FINNHUB_API_KEY:      ${{ secrets.FINNHUB_API_KEY }}
+          HF_HOME: ~/.cache/huggingface
+        run: |
+          python -m src.data.pull       --config config.yaml --universe
+          python -m src.data.align      --config config.yaml --universe
+          python -m src.sentiment.score --config config.yaml --universe
+          python -m src.features.build  --config config.yaml --universe
+          python -m src.predict         --config config.yaml --universe
+
+      - name: Commit refreshed dashboard data
+        run: |
+          git config user.name  "github-actions"
+          git config user.email "actions@github.com"
+          git add docs/data
+          git commit -m "chore: daily data refresh" || echo "no changes"
+          git push

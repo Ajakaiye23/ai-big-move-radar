@@ -1,0 +1,396 @@
+{
+  "frozen_meta": {
+    "frozen_date": "2026-06-23",
+    "config_hash": "d6defb28894e",
+    "data_mode": "live",
+    "target_type": "big_move",
+    "horizon_days": 1,
+    "model_scope": "pooled",
+    "feature_cols": [
+      "ret_1",
+      "ret_2",
+      "ret_3",
+      "ret_5",
+      "ret_10",
+      "ma5_ratio",
+      "ma10_ratio",
+      "ma20_ratio",
+      "vol_5",
+      "vol_10",
+      "vol_20",
+      "rsi_14",
+      "macd",
+      "volume_change",
+      "volume_vs_ma",
+      "dow",
+      "rel_strength_sector",
+      "sent_mean",
+      "sent_dispersion",
+      "post_volume",
+      "share_pos",
+      "share_neg",
+      "sent_momentum",
+      "no_coverage",
+      "sent_roll3",
+      "sent_roll5",
+      "sent_roll10",
+      "sent_surprise",
+      "sent_x_volume",
+      "sent_accel",
+      "news_sent_mean",
+      "news_post_volume",
+      "news_sent_momentum",
+      "social_sent_mean",
+      "social_post_volume",
+      "social_sent_momentum",
+      "news_social_divergence",
+      "mkt_ret_1",
+      "mkt_vol_10",
+      "vix_level",
+      "vix_change",
+      "ticker_code",
+      "sector_code"
+    ],
+    "n_train": 3895,
+    "n_val": 820,
+    "n_test": 861,
+    "train_window": [
+      "2025-12-02",
+      "2026-04-20"
+    ],
+    "test_window": [
+      "2026-05-19",
+      "2026-06-17"
+    ],
+    "scorer": "finbert"
+  },
+  "target_type": "big_move",
+  "threshold": 0.1180257499217987,
+  "metrics_table": {
+    "model": {
+      "accuracy": 0.40534262485482,
+      "precision": 0.20299500831946754,
+      "recall": 0.7870967741935484,
+      "f1": 0.32275132275132273,
+      "n": 861,
+      "up_rate": 0.1800232288037166,
+      "roc_auc": 0.5783743032075299
+    },
+    "persistence": {
+      "accuracy": 0.7235772357723578,
+      "precision": 0.23225806451612904,
+      "recall": 0.23225806451612904,
+      "f1": 0.23225806451612904,
+      "n": 861,
+      "up_rate": 0.1800232288037166,
+      "roc_auc": null
+    },
+    "majority_class": {
+      "accuracy": 0.8199767711962834,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "n": 861,
+      "up_rate": 0.1800232288037166,
+      "roc_auc": null
+    }
+  },
+  "model_beats_baselines_accuracy": {
+    "persistence": -0.3182346109175378,
+    "majority_class": -0.41463414634146345
+  },
+  "confusion_matrix": [
+    [
+      227,
+      479
+    ],
+    [
+      33,
+      122
+    ]
+  ],
+  "aggregate_test_hit_rate": 0.40534262485482,
+  "per_ticker_test_hit_rate": [
+    {
+      "ticker": "AAPL",
+      "hit_rate": 0.1905,
+      "n": 21
+    },
+    {
+      "ticker": "ABNB",
+      "hit_rate": 0.1905,
+      "n": 21
+    },
+    {
+      "ticker": "ADBE",
+      "hit_rate": 0.2857,
+      "n": 21
+    },
+    {
+      "ticker": "AMC",
+      "hit_rate": 0.619,
+      "n": 21
+    },
+    {
+      "ticker": "AMD",
+      "hit_rate": 0.619,
+      "n": 21
+    },
+    {
+      "ticker": "AMZN",
+      "hit_rate": 0.381,
+      "n": 21
+    },
+    {
+      "ticker": "ARM",
+      "hit_rate": 0.7619,
+      "n": 21
+    },
+    {
+      "ticker": "AVGO",
+      "hit_rate": 0.381,
+      "n": 21
+    },
+    {
+      "ticker": "BA",
+      "hit_rate": 0.2857,
+      "n": 21
+    },
+    {
+      "ticker": "COIN",
+      "hit_rate": 0.619,
+      "n": 21
+    },
+    {
+      "ticker": "COST",
+      "hit_rate": 0.381,
+      "n": 21
+    },
+    {
+      "ticker": "CRM",
+      "hit_rate": 0.2857,
+      "n": 21
+    },
+    {
+      "ticker": "CSCO",
+      "hit_rate": 0.619,
+      "n": 21
+    },
+    {
+      "ticker": "DIS",
+      "hit_rate": 0.0952,
+      "n": 21
+    },
+    {
+      "ticker": "GME",
+      "hit_rate": 0.4762,
+      "n": 21
+    },
+    {
+      "ticker": "GOOGL",
+      "hit_rate": 0.2381,
+      "n": 21
+    },
+    {
+      "ticker": "HOOD",
+      "hit_rate": 0.4286,
+      "n": 21
+    },
+    {
+      "ticker": "INTC",
+      "hit_rate": 0.6667,
+      "n": 21
+    },
+    {
+      "ticker": "JPM",
+      "hit_rate": 0.2857,
+      "n": 21
+    },
+    {
+      "ticker": "LCID",
+      "hit_rate": 0.4286,
+      "n": 21
+    },
+    {
+      "ticker": "META",
+      "hit_rate": 0.1905,
+      "n": 21
+    },
+    {
+      "ticker": "MRVL",
+      "hit_rate": 0.5714,
+      "n": 21
+    },
+    {
+      "ticker": "MSFT",
+      "hit_rate": 0.1905,
+      "n": 21
+    },
+    {
+      "ticker": "MSTR",
+      "hit_rate": 0.2857,
+      "n": 21
+    },
+    {
+      "ticker": "MU",
+      "hit_rate": 0.7143,
+      "n": 21
+    },
+    {
+      "ticker": "NFLX",
+      "hit_rate": 0.0952,
+      "n": 21
+    },
+    {
+      "ticker": "NIO",
+      "hit_rate": 0.4762,
+      "n": 21
+    },
+    {
+      "ticker": "NVDA",
+      "hit_rate": 0.381,
+      "n": 21
+    },
+    {
+      "ticker": "ORCL",
+      "hit_rate": 0.5238,
+      "n": 21
+    },
+    {
+      "ticker": "PLTR",
+      "hit_rate": 0.4762,
+      "n": 21
+    },
+    {
+      "ticker": "PYPL",
+      "hit_rate": 0.2381,
+      "n": 21
+    },
+    {
+      "ticker": "QCOM",
+      "hit_rate": 0.6667,
+      "n": 21
+    },
+    {
+      "ticker": "QQQ",
+      "hit_rate": 0.2381,
+      "n": 21
+    },
+    {
+      "ticker": "RIVN",
+      "hit_rate": 0.5238,
+      "n": 21
+    },
+    {
+      "ticker": "SHOP",
+      "hit_rate": 0.7619,
+      "n": 21
+    },
+    {
+      "ticker": "SMCI",
+      "hit_rate": 0.5714,
+      "n": 21
+    },
+    {
+      "ticker": "SOFI",
+      "hit_rate": 0.4286,
+      "n": 21
+    },
+    {
+      "ticker": "SPY",
+      "hit_rate": 0.2857,
+      "n": 21
+    },
+    {
+      "ticker": "TSLA",
+      "hit_rate": 0.381,
+      "n": 21
+    },
+    {
+      "ticker": "UBER",
+      "hit_rate": 0.1429,
+      "n": 21
+    },
+    {
+      "ticker": "WMT",
+      "hit_rate": 0.2381,
+      "n": 21
+    }
+  ],
+  "headline_ablation": {
+    "metric": "roc_auc",
+    "market_only_f1": 0.5695101891620213,
+    "market_sentiment_f1": 0.5745636479941515,
+    "sentiment_delta_f1": 0.005053458832130153,
+    "walk_forward": {
+      "folds": 5,
+      "deltas": [
+        0.0026,
+        -0.006,
+        0.0122,
+        0.0007,
+        0.0391
+      ],
+      "market_f1_mean": 0.5489064286555548,
+      "market_sentiment_f1_mean": 0.5586475761945977,
+      "mean": 0.009741147539042917,
+      "std": 0.01580999169549566
+    }
+  },
+  "backtest": {
+    "kind": "big_move",
+    "avg_move_flagged": 0.02784981859888418,
+    "avg_move_overall": 0.02997935973628926,
+    "avg_move_not_flagged": 0.034901875980829465,
+    "lift_vs_own_norm_flagged": 0.007609179426353526,
+    "lift_vs_own_norm_all": 0.005756515196719363,
+    "strategy_pnl": [
+      0.007,
+      0.00294,
+      0.00162,
+      -0.00495,
+      -0.00807,
+      -0.00235,
+      0.01685,
+      0.03197,
+      0.04957,
+      0.06636,
+      0.0649,
+      0.09331,
+      0.09502,
+      0.09625,
+      0.10706,
+      0.1264,
+      0.13084,
+      0.13971,
+      0.14183,
+      0.14957,
+      0.15125
+    ],
+    "always_straddle_pnl": [
+      0.00707,
+      0.00031,
+      -0.00438,
+      -0.00675,
+      -0.01071,
+      -0.00844,
+      0.00415,
+      0.02245,
+      0.03562,
+      0.04643,
+      0.04436,
+      0.07664,
+      0.07677,
+      0.07753,
+      0.08755,
+      0.10536,
+      0.10074,
+      0.10956,
+      0.11331,
+      0.11706,
+      0.12089
+    ],
+    "strategy_total_pnl": 0.15125449438945873,
+    "always_total_pnl": 0.1208868191311066
+  }
+}
