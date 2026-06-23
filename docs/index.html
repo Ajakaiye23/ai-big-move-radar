@@ -7,7 +7,7 @@
   <meta name="description" content="Experimental directional signal tracker — does social sentiment add predictive signal beyond price/volume? Not financial advice."/>
   <link rel="manifest" href="manifest.webmanifest"/>
   <meta name="theme-color" content="#0e1117"/>
-  <link rel="stylesheet" href="assets/style.css?v=8"/>
+  <link rel="stylesheet" href="assets/style.css?v=9"/>
 </head>
 <body data-theme="dark">
   <header class="topbar">
@@ -162,6 +162,22 @@
       </section>
     </div>
 
+    <!-- Global leaderboard (Supabase) -->
+    <section class="panel" id="leaderboard">
+      <h2>Global leaderboard <span class="hint">how your "Beat the Model" accuracy stacks up vs everyone</span></h2>
+      <div class="lb-submit">
+        <input type="text" id="lb-handle" maxlength="24" placeholder="your handle"/>
+        <button id="lb-submit-btn" class="pt-btn primary">Submit my score</button>
+        <span class="pt-note" id="lb-msg"></span>
+      </div>
+      <table id="lb-table">
+        <thead><tr><th>#</th><th>Handle</th><th>Accuracy</th><th>Rounds</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <p class="pt-fine">Scores come from the "Beat the Model" game and are submitted from your browser —
+        a fun, public scoreboard, not a tamper-proof one. Be cool. 🙂</p>
+    </section>
+
     <div class="grid-2">
       <!-- 6. Calibration -->
       <section class="panel">
@@ -198,6 +214,6 @@
     <p class="fine">Not financial advice. For research and education only.</p>
   </footer>
 
-  <script src="assets/app.js?v=9"></script>
+  <script src="assets/app.js?v=10"></script>
 </body>
 </html>
