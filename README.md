@@ -1,6 +1,6 @@
 # AI Big-Move Radar (sentiment + market data)
 
-**The honest story:** we first tested whether AI can call next-session **direction** (up/down)
+We first tested whether AI can call next-session **direction** (up/down)
 from sentiment + price. On real data it's a **coin flip (~50%)** — that's market efficiency, not
 a bug, and chasing it invites leakage/overfitting. So we pivoted to what genuinely *is*
 predictable: **volatility**. Big moves cluster, so the live question becomes —
