@@ -9,51 +9,71 @@ const SUPABASE_URL = "https://wrtgzepgqstbiejwoqgw.supabase.co";
 const SUPABASE_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndydGd6ZXBncXN0YmllandvcWd3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIyNDIyMjYsImV4cCI6MjA5NzgxODIyNn0.WFTVn7HnE4joF0-zkFBX2ay3oQPL6o-7BrbIguaiYRc";
 const SB_HEADERS = { apikey: SUPABASE_ANON, Authorization: "Bearer " + SUPABASE_ANON, "Content-Type": "application/json" };
 
-async function lbSubmit(handle, correct, total) {
+async function lbSubmit(handle, board, score, detail) {
   const r = await fetch(SUPABASE_URL + "/rest/v1/leaderboard", {
     method: "POST", headers: { ...SB_HEADERS, Prefer: "return=minimal" },
-    body: JSON.stringify({ handle, game_correct: correct, game_total: total }),
+    body: JSON.stringify({ handle, board, score, detail }),
   });
   if (!r.ok) throw new Error("submit failed (" + r.status + ")");
 }
 
-async function lbTop() {
-  // pull recent rows, keep each handle's best (min 3 rounds), rank by accuracy
-  const r = await fetch(SUPABASE_URL + "/rest/v1/leaderboard?select=handle,game_correct,game_total&order=created_at.desc&limit=300", { headers: SB_HEADERS, cache: "no-store" });
+async function lbTop(board) {
+  // recent rows for this board, keep each handle's BEST score, rank desc
+  const r = await fetch(SUPABASE_URL + "/rest/v1/leaderboard?select=handle,score,detail&board=eq."
+    + board + "&order=created_at.desc&limit=300", { headers: SB_HEADERS, cache: "no-store" });
   if (!r.ok) throw new Error("load failed (" + r.status + ")");
-  const rows = await r.json();
   const best = {};
-  for (const x of rows) {
-    if (x.game_total < 3) continue;
-    const acc = x.game_correct / x.game_total;
-    if (!best[x.handle] || acc > best[x.handle].acc) best[x.handle] = { acc, n: x.game_total };
+  for (const x of await r.json()) {
+    if (!best[x.handle] || x.score > best[x.handle].score) best[x.handle] = { score: x.score, detail: x.detail };
   }
   return Object.entries(best).map(([h, v]) => ({ handle: h, ...v }))
-    .sort((a, b) => b.acc - a.acc).slice(0, 10);
+    .sort((a, b) => b.score - a.score).slice(0, 10);
 }
 
 async function renderLeaderboard() {
-  const tb = document.querySelector("#lb-table tbody");
   const msg = document.getElementById("lb-msg");
-  const draw = (rows) => {
-    tb.innerHTML = rows.length
-      ? rows.map((x, i) => `<tr><td>${i + 1}</td><td class="tk">${escapeHtml(x.handle)}</td><td>${fmtPct(x.acc)}</td><td>${x.n}</td></tr>`).join("")
-      : `<tr class="empty"><td colspan="4">No scores yet — be the first! Play "Beat the Model" then submit.</td></tr>`;
+  const drawGame = (rows) => {
+    document.querySelector("#lb-game tbody").innerHTML = rows.length
+      ? rows.map((x, i) => `<tr><td>${i + 1}</td><td class="tk">${escapeHtml(x.handle)}</td><td>${fmtPct(x.score)}</td><td>${escapeHtml(x.detail || "")}</td></tr>`).join("")
+      : `<tr class="empty"><td colspan="4">No scores yet — play "Beat the Model" and submit.</td></tr>`;
   };
-  try { draw(await lbTop()); }
-  catch (e) { tb.innerHTML = `<tr class="empty"><td colspan="4">Leaderboard offline (run the SQL setup in Supabase).</td></tr>`; }
+  const drawPort = (rows) => {
+    document.querySelector("#lb-port tbody").innerHTML = rows.length
+      ? rows.map((x, i) => `<tr><td>${i + 1}</td><td class="tk">${escapeHtml(x.handle)}</td><td class="${x.score >= 0 ? "pnl-pos" : "pnl-neg"}">${x.score >= 0 ? "+" : ""}${(x.score * 100).toFixed(1)}%</td><td>${escapeHtml(x.detail || "")}</td></tr>`).join("")
+      : `<tr class="empty"><td colspan="4">No portfolios yet — trade some fake money and submit.</td></tr>`;
+  };
+  const offline = (sel) => { document.querySelector(sel + " tbody").innerHTML = `<tr class="empty"><td colspan="4">Leaderboard offline (run the SQL setup in Supabase).</td></tr>`; };
+  const refresh = async () => {
+    try { drawGame(await lbTop("game")); } catch (e) { offline("#lb-game"); }
+    try { drawPort(await lbTop("portfolio")); } catch (e) { offline("#lb-port"); }
+  };
+  await refresh();
 
-  const btn = document.getElementById("lb-submit-btn");
-  btn.onclick = async () => {
-    const handle = (document.getElementById("lb-handle").value || "").trim();
-    if (handle.length < 1) { msg.textContent = "Enter a handle first."; return; }
+  const handleVal = () => (document.getElementById("lb-handle").value || "").trim();
+  document.getElementById("lb-submit-game").onclick = async () => {
+    const handle = handleVal();
+    if (!handle) { msg.textContent = "Enter a handle first."; return; }
     const s = JSON.parse(localStorage.getItem("btm") || '{"user":0,"n":0}');
-    if (s.n < 3) { msg.textContent = "Play at least 3 rounds of Beat the Model first."; return; }
+    if (s.n < 3) { msg.textContent = "Play ≥3 rounds of Beat the Model first."; return; }
     try {
-      await lbSubmit(handle, s.user, s.n);
-      msg.textContent = `Submitted ${s.user}/${s.n}!`;
+      await lbSubmit(handle, "game", s.user / s.n, `${s.user}/${s.n} rounds`);
       localStorage.setItem("lb_handle", handle);
-      draw(await lbTop());
+      msg.textContent = `Game score submitted (${s.user}/${s.n})!`; await refresh();
+    } catch (e) { msg.textContent = "Submit failed — is the Supabase table set up?"; }
+  };
+  document.getElementById("lb-submit-port").onclick = async () => {
+    const handle = handleVal();
+    if (!handle) { msg.textContent = "Enter a handle first."; return; }
+    const pt = JSON.parse(localStorage.getItem(PT_KEY) || "null");
+    if (!pt || (pt.cash === PT_START && !Object.keys(pt.holdings || {}).length)) {
+      msg.textContent = "Build a paper portfolio first (buy something)."; return;
+    }
+    const ret = window._ptReturn != null ? window._ptReturn : 0;
+    const val = window._ptValue != null ? window._ptValue : PT_START;
+    try {
+      await lbSubmit(handle, "portfolio", ret, fmtMoney(val));
+      localStorage.setItem("lb_handle", handle);
+      msg.textContent = `Portfolio submitted (${(ret * 100).toFixed(1)}%)!`; await refresh();
     } catch (e) { msg.textContent = "Submit failed — is the Supabase table set up?"; }
   };
   const saved = localStorage.getItem("lb_handle");
@@ -383,6 +403,7 @@ function renderPaperTrade(preds, port) {
   }
 
   const total = s.cash + holdingsVal, pnl = total - s.start, ret = pnl / s.start;
+  window._ptReturn = ret; window._ptValue = total;   // for the global leaderboard
   const set = (id, txt, cls) => { const e = document.getElementById(id); if (e) { e.textContent = txt; if (cls) e.className = "pt-big " + cls; } };
   set("pt-total", fmtMoney(total));
   set("pt-cash", fmtMoney(s.cash));

@@ -164,18 +164,25 @@
 
     <!-- Global leaderboard (Supabase) -->
     <section class="panel" id="leaderboard">
-      <h2>Global leaderboard <span class="hint">how your "Beat the Model" accuracy stacks up vs everyone</span></h2>
+      <h2>Global leaderboard <span class="hint">compete with everyone — game accuracy &amp; paper-portfolio return</span></h2>
       <div class="lb-submit">
         <input type="text" id="lb-handle" maxlength="24" placeholder="your handle"/>
-        <button id="lb-submit-btn" class="pt-btn primary">Submit my score</button>
+        <button id="lb-submit-game" class="pt-btn primary">🎯 Submit game score</button>
+        <button id="lb-submit-port" class="pt-btn primary">💰 Submit portfolio</button>
         <span class="pt-note" id="lb-msg"></span>
       </div>
-      <table id="lb-table">
-        <thead><tr><th>#</th><th>Handle</th><th>Accuracy</th><th>Rounds</th></tr></thead>
-        <tbody></tbody>
-      </table>
-      <p class="pt-fine">Scores come from the "Beat the Model" game and are submitted from your browser —
-        a fun, public scoreboard, not a tamper-proof one. Be cool. 🙂</p>
+      <div class="grid-2">
+        <div>
+          <h3>🎯 Beat the Model <span class="hint">top accuracy (≥3 rounds)</span></h3>
+          <table id="lb-game"><thead><tr><th>#</th><th>Handle</th><th>Accuracy</th><th>Rounds</th></tr></thead><tbody></tbody></table>
+        </div>
+        <div>
+          <h3>💰 Paper portfolio <span class="hint">top return vs $100k start</span></h3>
+          <table id="lb-port"><thead><tr><th>#</th><th>Handle</th><th>Return</th><th>Value</th></tr></thead><tbody></tbody></table>
+        </div>
+      </div>
+      <p class="pt-fine">Scores are submitted from your browser — a fun, public scoreboard, not a tamper-proof
+        one (row-level security stops editing/deleting others' rows). Be cool. 🙂</p>
     </section>
 
     <div class="grid-2">
@@ -214,6 +221,6 @@
     <p class="fine">Not financial advice. For research and education only.</p>
   </footer>
 
-  <script src="assets/app.js?v=10"></script>
+  <script src="assets/app.js?v=11"></script>
 </body>
 </html>
