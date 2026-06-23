@@ -338,6 +338,11 @@ Feature attribution via **{method}** (top features in `docs/assets/importances.p
 """
     out = utils.p(cfg, "reports") / "model_card.md"
     out.write_text(card, encoding="utf-8")
+    # also publish a copy inside docs/ so the dashboard link works on GitHub Pages
+    try:
+        (utils.p(cfg, "site_data").parent / "model_card.md").write_text(card, encoding="utf-8")
+    except Exception:  # noqa: BLE001
+        pass
     log.info("Model card -> %s", out)
 
 
