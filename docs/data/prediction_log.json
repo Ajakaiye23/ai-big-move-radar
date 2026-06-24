@@ -1,6 +1,744 @@
 {
   "predictions": [
     {
+      "date": "2024-12-31",
+      "ticker": "AAPL",
+      "sector": "tech",
+      "pred_up": true,
+      "p_up": 0.3478,
+      "confidence": 0.6522,
+      "sent_mean": 0.0,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 market return",
+        "\u2191 volume_change",
+        "\u2191 volume_vs_ma"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "ABNB",
+      "sector": "consumer",
+      "pred_up": true,
+      "p_up": 0.3478,
+      "confidence": 0.6522,
+      "sent_mean": 0.1949,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 volume_change",
+        "\u2193 market return",
+        "\u2191 sent_surprise"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "ADBE",
+      "sector": "software",
+      "pred_up": true,
+      "p_up": 0.1727,
+      "confidence": 0.8273,
+      "sent_mean": -0.065,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 bearish share",
+        "\u2193 market return",
+        "\u2191 sent_roll10"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "AMC",
+      "sector": "meme",
+      "pred_up": false,
+      "p_up": 0.104,
+      "confidence": 0.896,
+      "sent_mean": -0.1064,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 market return",
+        "\u2191 bearish share",
+        "\u2191 post volume"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "AMD",
+      "sector": "semis",
+      "pred_up": true,
+      "p_up": 0.3478,
+      "confidence": 0.6522,
+      "sent_mean": 0.0352,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 market return",
+        "\u2191 vix_change",
+        "\u2191 mkt_vol_10"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "AMZN",
+      "sector": "consumer",
+      "pred_up": true,
+      "p_up": 0.1727,
+      "confidence": 0.8273,
+      "sent_mean": -0.1046,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 market return",
+        "\u2191 bearish share",
+        "\u2191 post volume"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "ARM",
+      "sector": "semis",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.1941,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 market return",
+        "\u2191 bearish share",
+        "\u2191 post volume"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "AVGO",
+      "sector": "semis",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.2966,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 bearish share",
+        "\u2193 sent_surprise",
+        "\u2193 market return"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "BA",
+      "sector": "industrial",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.2862,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 market return",
+        "\u2191 sent_surprise",
+        "\u2191 post volume"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "COIN",
+      "sector": "crypto",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.0095,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 market return",
+        "\u2193 ret_5"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "COST",
+      "sector": "consumer",
+      "pred_up": true,
+      "p_up": 0.3478,
+      "confidence": 0.6522,
+      "sent_mean": -0.1001,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 volume_change",
+        "\u2193 market return"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "CRM",
+      "sector": "software",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.4766,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 sentiment momentum",
+        "\u2191 sent_surprise"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "CSCO",
+      "sector": "tech",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.0274,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 market return",
+        "\u2191 vix_change"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "DIS",
+      "sector": "media",
+      "pred_up": true,
+      "p_up": 0.3478,
+      "confidence": 0.6522,
+      "sent_mean": 0.0386,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 market return",
+        "\u2193 sent_roll10",
+        "\u2191 vix_change"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "GME",
+      "sector": "meme",
+      "pred_up": false,
+      "p_up": 0.104,
+      "confidence": 0.896,
+      "sent_mean": -0.1346,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 market return",
+        "\u2191 bearish share"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "GOOGL",
+      "sector": "tech",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.1371,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 market return",
+        "\u2193 sent_roll5"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "HOOD",
+      "sector": "fintech",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.0221,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 ret_3",
+        "\u2191 post volume",
+        "\u2193 market return"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "INTC",
+      "sector": "semis",
+      "pred_up": true,
+      "p_up": 0.3478,
+      "confidence": 0.6522,
+      "sent_mean": -0.1916,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 market return",
+        "\u2191 post volume",
+        "\u2191 vix_change"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "JPM",
+      "sector": "financials",
+      "pred_up": true,
+      "p_up": 0.3478,
+      "confidence": 0.6522,
+      "sent_mean": 0.0082,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 sent_roll5",
+        "\u2191 bearish share"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "LCID",
+      "sector": "auto",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.2622,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 market return",
+        "\u2191 post volume",
+        "\u2191 sent_surprise"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "META",
+      "sector": "tech",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.1308,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 market return",
+        "\u2191 post volume",
+        "\u2191 vix_change"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "MRVL",
+      "sector": "semis",
+      "pred_up": true,
+      "p_up": 0.1727,
+      "confidence": 0.8273,
+      "sent_mean": 0.8406,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 sentiment",
+        "\u2191 sent_surprise",
+        "\u2191 sentiment momentum"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "MSFT",
+      "sector": "tech",
+      "pred_up": true,
+      "p_up": 0.1727,
+      "confidence": 0.8273,
+      "sent_mean": 0.1726,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 market return",
+        "\u2191 sentiment momentum"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "MSTR",
+      "sector": "crypto",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.4791,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 sent_surprise",
+        "\u2191 sentiment",
+        "\u2193 market return"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "MU",
+      "sector": "semis",
+      "pred_up": true,
+      "p_up": 0.1727,
+      "confidence": 0.8273,
+      "sent_mean": 0.2059,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 market return",
+        "\u2191 sent_surprise"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "NFLX",
+      "sector": "media",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.1205,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 market return",
+        "\u2191 bearish share",
+        "\u2191 post volume"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "NIO",
+      "sector": "auto",
+      "pred_up": true,
+      "p_up": 0.3478,
+      "confidence": 0.6522,
+      "sent_mean": -0.0869,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 MACD",
+        "\u2193 market return"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "NVDA",
+      "sector": "semis",
+      "pred_up": true,
+      "p_up": 0.1727,
+      "confidence": 0.8273,
+      "sent_mean": -0.1766,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 bearish share",
+        "\u2193 market return",
+        "\u2191 post volume"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "ORCL",
+      "sector": "software",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.0097,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 market return",
+        "\u2193 sent_roll10"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "PLTR",
+      "sector": "software",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.3153,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 ret_3",
+        "\u2191 post volume",
+        "\u2193 ma5_ratio"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "PYPL",
+      "sector": "fintech",
+      "pred_up": true,
+      "p_up": 0.1727,
+      "confidence": 0.8273,
+      "sent_mean": 0.1289,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 sent_roll5",
+        "\u2193 market return"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "QCOM",
+      "sector": "semis",
+      "pred_up": true,
+      "p_up": 0.1727,
+      "confidence": 0.8273,
+      "sent_mean": 0.3961,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 sent_surprise",
+        "\u2191 post volume",
+        "\u2193 market return"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "QQQ",
+      "sector": "etf",
+      "pred_up": false,
+      "p_up": 0.1111,
+      "confidence": 0.8889,
+      "sent_mean": -0.4434,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 bearish share",
+        "\u2193 market return",
+        "\u2193 sentiment"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "RIVN",
+      "sector": "auto",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.2694,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 sent_surprise",
+        "\u2191 bearish share",
+        "\u2193 market return"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "SHOP",
+      "sector": "software",
+      "pred_up": false,
+      "p_up": 0.104,
+      "confidence": 0.896,
+      "sent_mean": -0.2215,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 sent_surprise",
+        "\u2193 market return",
+        "\u2191 post volume"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "SMCI",
+      "sector": "semis",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.0902,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 MACD",
+        "\u2191 post volume",
+        "\u2193 market return"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "SOFI",
+      "sector": "fintech",
+      "pred_up": true,
+      "p_up": 0.3478,
+      "confidence": 0.6522,
+      "sent_mean": 0.4459,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 sent_surprise",
+        "\u2193 market return",
+        "\u2191 sentiment"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "SPY",
+      "sector": "etf",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.1713,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 market return",
+        "\u2191 bearish share",
+        "\u2191 post volume"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "TSLA",
+      "sector": "auto",
+      "pred_up": true,
+      "p_up": 0.1727,
+      "confidence": 0.8273,
+      "sent_mean": 0.3949,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 sent_surprise",
+        "\u2193 market return",
+        "\u2191 sentiment"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "UBER",
+      "sector": "tech",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.7426,
+      "earnings_day": 0,
+      "why": [
+        "\u2193 sent_surprise",
+        "\u2191 bearish share",
+        "\u2193 sentiment"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2024-12-31",
+      "ticker": "WMT",
+      "sector": "consumer",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.1829,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 bearish share",
+        "\u2193 market return"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
       "date": "2026-05-19",
       "ticker": "AAPL",
       "sector": "tech",
@@ -16237,6 +16975,6 @@
       "realized_ret": null
     }
   ],
-  "updated_at": "2026-06-23T20:47:22.963587+00:00",
-  "data_mode": "live"
+  "updated_at": "2026-06-24T23:24:02.923731+00:00",
+  "data_mode": "offline"
 }
