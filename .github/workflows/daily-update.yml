@@ -45,7 +45,15 @@ jobs:
           REDDIT_USER_AGENT:    ai-stock-sentiment/0.1
           FINNHUB_API_KEY:      ${{ secrets.FINNHUB_API_KEY }}
           HF_HOME: ~/.cache/huggingface
+          # LIVE, rolling window: real yfinance prices (no key) + Finnhub news
+          # (needs the FINNHUB_API_KEY repo secret; without it, prices are still
+          # real and sentiment is simply empty). Computed each run so it stays current.
+          DATA_MODE: live
+          MAX_NEWS_PER_TICKER: "200"
         run: |
+          export DATA_END=$(date -u +%F)
+          export DATA_START=$(date -u -d '8 months ago' +%F)
+          echo "Live window: $DATA_START -> $DATA_END"
           python -m src.data.pull       --config config.yaml --universe
           python -m src.data.align      --config config.yaml --universe
           python -m src.sentiment.score --config config.yaml --universe
