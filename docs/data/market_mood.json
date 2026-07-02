@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-06-30",
+  "as_of": "2026-07-01",
   "universe_sentiment": 0.0,
   "top_bullish": [
     "TSLA",
@@ -13,17 +13,17 @@
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
-    "tech": 1.0,
+    "tech": 0.833,
     "consumer": 1.0,
-    "software": 0.6,
-    "meme": 0.5,
-    "semis": 0.444,
+    "software": 1.0,
+    "meme": 1.0,
+    "semis": 0.556,
     "industrial": 1.0,
     "crypto": 1.0,
     "media": 1.0,
-    "fintech": 0.667,
+    "fintech": 1.0,
     "financials": 1.0,
-    "auto": 0.25,
+    "auto": 0.75,
     "etf": 1.0
   }
 }
