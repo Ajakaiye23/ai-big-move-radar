@@ -1,97 +1,11 @@
 {
-  "as_of": "2026-07-01",
+  "as_of": "2026-07-02",
   "data_mode": "live",
   "target_type": "big_move",
-  "aggregate_hit_rate": 0.1932,
-  "n_reconciled": 880,
-  "baseline": 0.1775,
+  "aggregate_hit_rate": 0.1967,
+  "n_reconciled": 915,
+  "baseline": 0.1813,
   "watchlist": [
-    {
-      "ticker": "COST",
-      "sector": "consumer",
-      "direction": "\u25b2",
-      "pred_up": true,
-      "confidence": 0.6522,
-      "p_up": 0.3478,
-      "big_move_prob": 0.3478,
-      "flagged": true,
-      "conviction": true,
-      "price": 924.67,
-      "sentiment": 0.0,
-      "sentiment_spark": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "hit_rate": 0.2759,
-      "n_predictions": 29,
-      "why": [
-        "\u2193 MACD",
-        "\u2193 vol_20",
-        "\u2193 VIX"
-      ],
-      "earnings_day": 0
-    },
-    {
-      "ticker": "META",
-      "sector": "tech",
-      "direction": "\u25b2",
-      "pred_up": true,
-      "confidence": 0.6522,
-      "p_up": 0.3478,
-      "big_move_prob": 0.3478,
-      "flagged": true,
-      "conviction": true,
-      "price": 612.91,
-      "sentiment": 0.0,
-      "sentiment_spark": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "hit_rate": 0.1724,
-      "n_predictions": 29,
-      "why": [
-        "\u2191 volume_vs_ma",
-        "\u2191 volume_change",
-        "\u2191 ret_3"
-      ],
-      "earnings_day": 0
-    },
     {
       "ticker": "ORCL",
       "sector": "software",
@@ -102,7 +16,7 @@
       "big_move_prob": 0.3478,
       "flagged": true,
       "conviction": true,
-      "price": 142.5,
+      "price": 140.27,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -126,60 +40,17 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.3793,
-      "n_predictions": 29,
+      "hit_rate": 0.3667,
+      "n_predictions": 30,
       "why": [
         "\u2193 ma20_ratio",
-        "\u2193 ret_10",
-        "\u2193 MACD"
+        "\u2193 MACD",
+        "\u2193 ret_10"
       ],
       "earnings_day": 0
     },
     {
-      "ticker": "PYPL",
-      "sector": "fintech",
-      "direction": "\u25b2",
-      "pred_up": true,
-      "confidence": 0.6522,
-      "p_up": 0.3478,
-      "big_move_prob": 0.3478,
-      "flagged": true,
-      "conviction": false,
-      "price": 44.07,
-      "sentiment": 0.0,
-      "sentiment_spark": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "hit_rate": 0.2069,
-      "n_predictions": 29,
-      "why": [
-        "\u2191 volume_change",
-        "\u2193 VIX",
-        "\u2191 volume_vs_ma"
-      ],
-      "earnings_day": 0
-    },
-    {
-      "ticker": "ABNB",
+      "ticker": "COST",
       "sector": "consumer",
       "direction": "\u25b2",
       "pred_up": true,
@@ -187,8 +58,8 @@
       "p_up": 0.1727,
       "big_move_prob": 0.1727,
       "flagged": true,
-      "conviction": false,
-      "price": 147.31,
+      "conviction": true,
+      "price": 951.67,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -212,103 +83,17 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.2069,
-      "n_predictions": 29,
+      "hit_rate": 0.3,
+      "n_predictions": 30,
       "why": [
-        "\u2193 VIX",
-        "\u2191 ma20_ratio",
-        "\u2191 ret_1"
+        "\u2193 MACD",
+        "\u2193 vol_20",
+        "\u2193 VIX"
       ],
       "earnings_day": 0
     },
     {
-      "ticker": "COIN",
-      "sector": "crypto",
-      "direction": "\u25b2",
-      "pred_up": true,
-      "confidence": 0.8273,
-      "p_up": 0.1727,
-      "big_move_prob": 0.1727,
-      "flagged": true,
-      "conviction": false,
-      "price": 159.24,
-      "sentiment": 0.0,
-      "sentiment_spark": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "hit_rate": 0.5517,
-      "n_predictions": 29,
-      "why": [
-        "\u2191 ret_1",
-        "\u2191 ma5_ratio",
-        "\u2191 vol_5"
-      ],
-      "earnings_day": 0
-    },
-    {
-      "ticker": "CSCO",
-      "sector": "tech",
-      "direction": "\u25b2",
-      "pred_up": true,
-      "confidence": 0.8273,
-      "p_up": 0.1727,
-      "big_move_prob": 0.1727,
-      "flagged": true,
-      "conviction": false,
-      "price": 117.01,
-      "sentiment": 0.0,
-      "sentiment_spark": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "hit_rate": 0.5172,
-      "n_predictions": 29,
-      "why": [
-        "\u2193 VIX",
-        "\u2191 volume_vs_ma",
-        "\u2191 ret_3"
-      ],
-      "earnings_day": 0
-    },
-    {
-      "ticker": "DIS",
+      "ticker": "NFLX",
       "sector": "media",
       "direction": "\u25b2",
       "pred_up": true,
@@ -316,8 +101,8 @@
       "p_up": 0.1727,
       "big_move_prob": 0.1727,
       "flagged": true,
-      "conviction": false,
-      "price": 95.71,
+      "conviction": true,
+      "price": 77.65,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -341,26 +126,26 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.1034,
-      "n_predictions": 29,
+      "hit_rate": 0.2333,
+      "n_predictions": 30,
       "why": [
-        "\u2193 vol_20",
-        "\u2193 VIX",
-        "\u2193 ret_5"
+        "\u2191 ret_2",
+        "\u2191 ret_5",
+        "\u2191 ma5_ratio"
       ],
       "earnings_day": 0
     },
     {
-      "ticker": "JPM",
-      "sector": "financials",
+      "ticker": "NIO",
+      "sector": "auto",
       "direction": "\u25b2",
       "pred_up": true,
       "confidence": 0.8273,
       "p_up": 0.1727,
       "big_move_prob": 0.1727,
-      "flagged": false,
+      "flagged": true,
       "conviction": false,
-      "price": 334.07,
+      "price": 4.79,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -384,12 +169,55 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.2069,
-      "n_predictions": 29,
+      "hit_rate": 0.4,
+      "n_predictions": 30,
       "why": [
-        "\u2191 volume_change",
-        "\u2191 volume_vs_ma",
-        "\u2191 MACD"
+        "\u2193 ret_2",
+        "\u2193 VIX",
+        "\u2193 ret_1"
+      ],
+      "earnings_day": 0
+    },
+    {
+      "ticker": "NVDA",
+      "sector": "semis",
+      "direction": "\u25b2",
+      "pred_up": true,
+      "confidence": 0.8273,
+      "p_up": 0.1727,
+      "big_move_prob": 0.1727,
+      "flagged": true,
+      "conviction": false,
+      "price": 194.83,
+      "sentiment": 0.0,
+      "sentiment_spark": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hit_rate": 0.3,
+      "n_predictions": 30,
+      "why": [
+        "\u2193 VIX",
+        "\u2191 dow",
+        "\u2193 ret_2"
       ],
       "earnings_day": 0
     },
@@ -401,9 +229,9 @@
       "confidence": 0.8273,
       "p_up": 0.1727,
       "big_move_prob": 0.1727,
-      "flagged": false,
+      "flagged": true,
       "conviction": false,
-      "price": 125.73,
+      "price": 129.3,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -427,12 +255,12 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.4483,
-      "n_predictions": 29,
+      "hit_rate": 0.4333,
+      "n_predictions": 30,
       "why": [
+        "\u2191 ret_5",
         "\u2191 ret_3",
-        "\u2191 ma5_ratio",
-        "\u2191 ret_1"
+        "\u2191 ret_2"
       ],
       "earnings_day": 0
     },
@@ -444,9 +272,9 @@
       "confidence": 0.8273,
       "p_up": 0.1727,
       "big_move_prob": 0.1727,
-      "flagged": false,
+      "flagged": true,
       "conviction": false,
-      "price": 181.92,
+      "price": 176.25,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -470,12 +298,98 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.5172,
-      "n_predictions": 29,
+      "hit_rate": 0.5,
+      "n_predictions": 30,
       "why": [
-        "\u2191 vol_20",
-        "\u2193 ma20_ratio",
-        "\u2193 ma10_ratio"
+        "\u2193 ret_5",
+        "\u2193 ma10_ratio",
+        "\u2193 ma20_ratio"
+      ],
+      "earnings_day": 0
+    },
+    {
+      "ticker": "RIVN",
+      "sector": "auto",
+      "direction": "\u25b2",
+      "pred_up": true,
+      "confidence": 0.8273,
+      "p_up": 0.1727,
+      "big_move_prob": 0.1727,
+      "flagged": true,
+      "conviction": false,
+      "price": 18.63,
+      "sentiment": 0.0,
+      "sentiment_spark": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hit_rate": 0.4667,
+      "n_predictions": 30,
+      "why": [
+        "\u2191 volume_vs_ma",
+        "\u2191 ret_5",
+        "\u2191 volume_change"
+      ],
+      "earnings_day": 0
+    },
+    {
+      "ticker": "SPY",
+      "sector": "etf",
+      "direction": "\u25b2",
+      "pred_up": true,
+      "confidence": 0.8273,
+      "p_up": 0.1727,
+      "big_move_prob": 0.1727,
+      "flagged": false,
+      "conviction": false,
+      "price": 744.78,
+      "sentiment": 0.0,
+      "sentiment_spark": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hit_rate": 0.2333,
+      "n_predictions": 30,
+      "why": [
+        "\u2193 vol_20",
+        "\u2193 VIX",
+        "\u2191 dow"
       ],
       "earnings_day": 0
     },
@@ -489,7 +403,7 @@
       "big_move_prob": 0.1727,
       "flagged": false,
       "conviction": false,
-      "price": 108.82,
+      "price": 111.84,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -513,12 +427,98 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.2759,
-      "n_predictions": 29,
+      "hit_rate": 0.3,
+      "n_predictions": 30,
       "why": [
-        "\u2191 volume_vs_ma",
-        "\u2193 ret_5",
-        "\u2191 volume_change"
+        "\u2193 VIX",
+        "\u2193 vol_20",
+        "\u2191 dow"
+      ],
+      "earnings_day": 0
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "tech",
+      "direction": "\u25b2",
+      "pred_up": true,
+      "confidence": 0.882,
+      "p_up": 0.118,
+      "big_move_prob": 0.118,
+      "flagged": false,
+      "conviction": false,
+      "price": 308.63,
+      "sentiment": 0.0,
+      "sentiment_spark": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hit_rate": 0.2333,
+      "n_predictions": 30,
+      "why": [
+        "\u2191 ret_3",
+        "\u2191 ret_5",
+        "\u2191 ma5_ratio"
+      ],
+      "earnings_day": 0
+    },
+    {
+      "ticker": "ABNB",
+      "sector": "consumer",
+      "direction": "\u25b2",
+      "pred_up": true,
+      "confidence": 0.882,
+      "p_up": 0.118,
+      "big_move_prob": 0.118,
+      "flagged": false,
+      "conviction": false,
+      "price": 148.93,
+      "sentiment": 0.0,
+      "sentiment_spark": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hit_rate": 0.2,
+      "n_predictions": 30,
+      "why": [
+        "\u2193 VIX",
+        "\u2191 ma20_ratio",
+        "\u2191 ret_2"
       ],
       "earnings_day": 0
     },
@@ -532,7 +532,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 210.98,
+      "price": 219.72,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -556,12 +556,12 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.2759,
-      "n_predictions": 29,
+      "hit_rate": 0.2667,
+      "n_predictions": 30,
       "why": [
-        "\u2193 MACD",
-        "\u2193 volume_vs_ma",
-        "\u2191 ret_5"
+        "\u2191 ret_5",
+        "\u2191 ma10_ratio",
+        "\u2191 ma5_ratio"
       ],
       "earnings_day": 0
     },
@@ -575,7 +575,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 1.93,
+      "price": 1.89,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -599,12 +599,55 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.6207,
-      "n_predictions": 29,
+      "hit_rate": 0.6,
+      "n_predictions": 30,
       "why": [
         "\u2191 vol_20",
         "\u2191 vol_5",
-        "\u2193 ret_3"
+        "\u2193 ret_10"
+      ],
+      "earnings_day": 0
+    },
+    {
+      "ticker": "AMD",
+      "sector": "semis",
+      "direction": "\u25b2",
+      "pred_up": true,
+      "confidence": 0.882,
+      "p_up": 0.118,
+      "big_move_prob": 0.118,
+      "flagged": false,
+      "conviction": false,
+      "price": 517.82,
+      "sentiment": 0.0,
+      "sentiment_spark": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hit_rate": 0.5,
+      "n_predictions": 30,
+      "why": [
+        "\u2191 MACD",
+        "\u2193 ret_2",
+        "\u2191 vol_20"
       ],
       "earnings_day": 0
     },
@@ -618,7 +661,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 241.7,
+      "price": 242.67,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -642,12 +685,12 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.3793,
-      "n_predictions": 29,
+      "hit_rate": 0.3667,
+      "n_predictions": 30,
       "why": [
         "\u2193 VIX",
-        "\u2191 ret_3",
-        "\u2191 ma5_ratio"
+        "\u2191 ret_5",
+        "\u2193 volume_vs_ma"
       ],
       "earnings_day": 0
     },
@@ -661,7 +704,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 369.34,
+      "price": 360.45,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -685,12 +728,12 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.3448,
-      "n_predictions": 29,
+      "hit_rate": 0.3333,
+      "n_predictions": 30,
       "why": [
         "\u2193 MACD",
         "\u2191 vol_20",
-        "\u2193 volume_vs_ma"
+        "\u2193 VIX"
       ],
       "earnings_day": 0
     },
@@ -704,7 +747,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 218.58,
+      "price": 226.49,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -728,12 +771,12 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.2069,
-      "n_predictions": 29,
+      "hit_rate": 0.2333,
+      "n_predictions": 30,
       "why": [
-        "\u2193 volume_vs_ma",
-        "\u2193 volume_change",
-        "\u2193 VIX"
+        "\u2191 ret_3",
+        "\u2193 VIX",
+        "\u2191 ma5_ratio"
       ],
       "earnings_day": 0
     },
@@ -747,7 +790,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 163.23,
+      "price": 166.11,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -771,12 +814,98 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.2759,
-      "n_predictions": 29,
+      "hit_rate": 0.2667,
+      "n_predictions": 30,
+      "why": [
+        "\u2191 ret_5",
+        "\u2193 volume_vs_ma",
+        "\u2191 ret_2"
+      ],
+      "earnings_day": 0
+    },
+    {
+      "ticker": "CSCO",
+      "sector": "tech",
+      "direction": "\u25b2",
+      "pred_up": true,
+      "confidence": 0.882,
+      "p_up": 0.118,
+      "big_move_prob": 0.118,
+      "flagged": false,
+      "conviction": false,
+      "price": 112.69,
+      "sentiment": 0.0,
+      "sentiment_spark": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hit_rate": 0.5,
+      "n_predictions": 30,
+      "why": [
+        "\u2193 VIX",
+        "\u2193 ret_1",
+        "\u2193 ret_3"
+      ],
+      "earnings_day": 0
+    },
+    {
+      "ticker": "DIS",
+      "sector": "media",
+      "direction": "\u25b2",
+      "pred_up": true,
+      "confidence": 0.882,
+      "p_up": 0.118,
+      "big_move_prob": 0.118,
+      "flagged": false,
+      "conviction": false,
+      "price": 99.5,
+      "sentiment": 0.0,
+      "sentiment_spark": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hit_rate": 0.1333,
+      "n_predictions": 30,
       "why": [
         "\u2191 ret_1",
-        "\u2191 ma5_ratio",
-        "\u2191 ret_5"
+        "\u2193 VIX",
+        "\u2193 vol_20"
       ],
       "earnings_day": 0
     },
@@ -790,7 +919,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 22.64,
+      "price": 22.82,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -814,12 +943,12 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.3448,
-      "n_predictions": 29,
+      "hit_rate": 0.3333,
+      "n_predictions": 30,
       "why": [
-        "\u2191 ma5_ratio",
+        "\u2191 ret_5",
         "\u2193 VIX",
-        "\u2191 ret_3"
+        "\u2193 vol_20"
       ],
       "earnings_day": 0
     },
@@ -833,7 +962,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 361.21,
+      "price": 359.91,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -857,12 +986,12 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.2414,
-      "n_predictions": 29,
+      "hit_rate": 0.2333,
+      "n_predictions": 30,
       "why": [
-        "\u2191 ret_3",
         "\u2193 volume_vs_ma",
-        "\u2193 VIX"
+        "\u2193 VIX",
+        "\u2191 dow"
       ],
       "earnings_day": 0
     },
@@ -876,7 +1005,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 108.65,
+      "price": 112.73,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -900,12 +1029,141 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.3793,
-      "n_predictions": 29,
+      "hit_rate": 0.3667,
+      "n_predictions": 30,
       "why": [
-        "\u2191 ret_1",
-        "\u2191 ma5_ratio",
+        "\u2191 ret_5",
+        "\u2191 ret_2",
         "\u2191 ret_3"
+      ],
+      "earnings_day": 0
+    },
+    {
+      "ticker": "INTC",
+      "sector": "semis",
+      "direction": "\u25b2",
+      "pred_up": true,
+      "confidence": 0.882,
+      "p_up": 0.118,
+      "big_move_prob": 0.118,
+      "flagged": false,
+      "conviction": false,
+      "price": 120.35,
+      "sentiment": 0.0,
+      "sentiment_spark": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hit_rate": 0.6,
+      "n_predictions": 30,
+      "why": [
+        "\u2191 vol_20",
+        "\u2193 ret_2",
+        "\u2193 ma5_ratio"
+      ],
+      "earnings_day": 0
+    },
+    {
+      "ticker": "JPM",
+      "sector": "financials",
+      "direction": "\u25b2",
+      "pred_up": true,
+      "confidence": 0.882,
+      "p_up": 0.118,
+      "big_move_prob": 0.118,
+      "flagged": false,
+      "conviction": false,
+      "price": 334.47,
+      "sentiment": 0.0,
+      "sentiment_spark": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hit_rate": 0.2,
+      "n_predictions": 30,
+      "why": [
+        "\u2191 MACD",
+        "\u2193 VIX",
+        "\u2193 volume_change"
+      ],
+      "earnings_day": 0
+    },
+    {
+      "ticker": "LCID",
+      "sector": "auto",
+      "direction": "\u25b2",
+      "pred_up": true,
+      "confidence": 0.882,
+      "p_up": 0.118,
+      "big_move_prob": 0.118,
+      "flagged": false,
+      "conviction": false,
+      "price": 6.08,
+      "sentiment": 0.0,
+      "sentiment_spark": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hit_rate": 0.4667,
+      "n_predictions": 30,
+      "why": [
+        "\u2191 vol_5",
+        "\u2191 ret_5",
+        "\u2191 vol_20"
       ],
       "earnings_day": 0
     },
@@ -919,7 +1177,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 384.28,
+      "price": 390.49,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -943,12 +1201,12 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.2414,
-      "n_predictions": 29,
+      "hit_rate": 0.2333,
+      "n_predictions": 30,
       "why": [
+        "\u2191 ret_5",
         "\u2193 MACD",
-        "\u2191 ma5_ratio",
-        "\u2193 VIX"
+        "\u2191 ret_3"
       ],
       "earnings_day": 0
     },
@@ -962,7 +1220,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 93.39,
+      "price": 100.77,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -986,11 +1244,11 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.3103,
-      "n_predictions": 29,
+      "hit_rate": 0.3333,
+      "n_predictions": 30,
       "why": [
-        "\u2191 vol_5",
-        "\u2191 ret_3",
+        "\u2191 ret_2",
+        "\u2191 ma5_ratio",
         "\u2191 vol_20"
       ],
       "earnings_day": 0
@@ -1005,7 +1263,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 1032.28,
+      "price": 975.56,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -1029,18 +1287,18 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.6897,
-      "n_predictions": 29,
+      "hit_rate": 0.6667,
+      "n_predictions": 30,
       "why": [
         "\u2191 MACD",
         "\u2191 vol_20",
-        "\u2191 vol_5"
+        "\u2193 ret_3"
       ],
       "earnings_day": 0
     },
     {
-      "ticker": "NFLX",
-      "sector": "media",
+      "ticker": "PYPL",
+      "sector": "fintech",
       "direction": "\u25b2",
       "pred_up": true,
       "confidence": 0.882,
@@ -1048,7 +1306,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 74.19,
+      "price": 45.47,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -1072,98 +1330,12 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.2069,
-      "n_predictions": 29,
+      "hit_rate": 0.2333,
+      "n_predictions": 30,
       "why": [
-        "\u2191 ret_1",
+        "\u2191 ret_5",
         "\u2193 VIX",
-        "\u2191 ma5_ratio"
-      ],
-      "earnings_day": 0
-    },
-    {
-      "ticker": "NIO",
-      "sector": "auto",
-      "direction": "\u25b2",
-      "pred_up": true,
-      "confidence": 0.882,
-      "p_up": 0.118,
-      "big_move_prob": 0.118,
-      "flagged": false,
-      "conviction": false,
-      "price": 4.97,
-      "sentiment": 0.0,
-      "sentiment_spark": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "hit_rate": 0.4138,
-      "n_predictions": 29,
-      "why": [
-        "\u2193 VIX",
-        "\u2193 ret_1",
-        "\u2191 ret_3"
-      ],
-      "earnings_day": 0
-    },
-    {
-      "ticker": "NVDA",
-      "sector": "semis",
-      "direction": "\u25b2",
-      "pred_up": true,
-      "confidence": 0.882,
-      "p_up": 0.118,
-      "big_move_prob": 0.118,
-      "flagged": false,
-      "conviction": false,
-      "price": 197.58,
-      "sentiment": 0.0,
-      "sentiment_spark": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "hit_rate": 0.3103,
-      "n_predictions": 29,
-      "why": [
-        "\u2193 VIX",
-        "\u2191 ret_3",
-        "\u2193 MACD"
+        "\u2191 ret_2"
       ],
       "earnings_day": 0
     },
@@ -1177,7 +1349,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 725.17,
+      "price": 712.6,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -1201,98 +1373,12 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.2414,
-      "n_predictions": 29,
+      "hit_rate": 0.2333,
+      "n_predictions": 30,
       "why": [
-        "\u2191 MACD",
         "\u2193 VIX",
-        "\u2193 volume_vs_ma"
-      ],
-      "earnings_day": 0
-    },
-    {
-      "ticker": "RIVN",
-      "sector": "auto",
-      "direction": "\u25b2",
-      "pred_up": true,
-      "confidence": 0.882,
-      "p_up": 0.118,
-      "big_move_prob": 0.118,
-      "flagged": false,
-      "conviction": false,
-      "price": 17.18,
-      "sentiment": 0.0,
-      "sentiment_spark": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "hit_rate": 0.4483,
-      "n_predictions": 29,
-      "why": [
-        "\u2191 ret_5",
-        "\u2191 ret_3",
-        "\u2191 vol_20"
-      ],
-      "earnings_day": 0
-    },
-    {
-      "ticker": "SHOP",
-      "sector": "software",
-      "direction": "\u25b2",
-      "pred_up": true,
-      "confidence": 0.882,
-      "p_up": 0.118,
-      "big_move_prob": 0.118,
-      "flagged": false,
-      "conviction": false,
-      "price": 121.63,
-      "sentiment": 0.0,
-      "sentiment_spark": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "hit_rate": 0.6207,
-      "n_predictions": 29,
-      "why": [
-        "\u2191 ret_1",
-        "\u2191 ma5_ratio",
-        "\u2191 ma10_ratio"
+        "\u2191 dow",
+        "\u2191 MACD"
       ],
       "earnings_day": 0
     },
@@ -1306,7 +1392,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 27.65,
+      "price": 27.22,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -1330,12 +1416,12 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.5172,
-      "n_predictions": 29,
+      "hit_rate": 0.5,
+      "n_predictions": 30,
       "why": [
         "\u2191 vol_20",
-        "\u2193 ma20_ratio",
-        "\u2193 ret_5"
+        "\u2193 ret_5",
+        "\u2193 ma20_ratio"
       ],
       "earnings_day": 0
     },
@@ -1349,7 +1435,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 18.44,
+      "price": 18.24,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -1373,55 +1459,12 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.3448,
-      "n_predictions": 29,
+      "hit_rate": 0.3333,
+      "n_predictions": 30,
       "why": [
-        "\u2191 ma20_ratio",
+        "\u2193 VIX",
         "\u2191 ret_5",
-        "\u2193 VIX"
-      ],
-      "earnings_day": 0
-    },
-    {
-      "ticker": "SPY",
-      "sector": "etf",
-      "direction": "\u25b2",
-      "pred_up": true,
-      "confidence": 0.882,
-      "p_up": 0.118,
-      "big_move_prob": 0.118,
-      "flagged": false,
-      "conviction": false,
-      "price": 745.76,
-      "sentiment": 0.0,
-      "sentiment_spark": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "hit_rate": 0.2414,
-      "n_predictions": 29,
-      "why": [
-        "\u2193 vol_20",
-        "\u2193 volume_vs_ma",
-        "\u2193 VIX"
+        "\u2191 ma20_ratio"
       ],
       "earnings_day": 0
     },
@@ -1435,7 +1478,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 425.3,
+      "price": 393.45,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -1459,12 +1502,12 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.3793,
-      "n_predictions": 29,
+      "hit_rate": 0.4,
+      "n_predictions": 30,
       "why": [
-        "\u2191 ret_3",
-        "\u2191 ret_5",
-        "\u2191 ma5_ratio"
+        "\u2193 ret_1",
+        "\u2191 volume_vs_ma",
+        "\u2191 volume_change"
       ],
       "earnings_day": 0
     },
@@ -1478,7 +1521,7 @@
       "big_move_prob": 0.118,
       "flagged": false,
       "conviction": false,
-      "price": 72.66,
+      "price": 74.43,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -1502,112 +1545,26 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.2069,
-      "n_predictions": 29,
+      "hit_rate": 0.2,
+      "n_predictions": 30,
       "why": [
         "\u2193 volume_vs_ma",
-        "\u2193 volume_change",
-        "\u2193 ret_3"
-      ],
-      "earnings_day": 0
-    },
-    {
-      "ticker": "AAPL",
-      "sector": "tech",
-      "direction": "\u25bc",
-      "pred_up": false,
-      "confidence": 0.8889,
-      "p_up": 0.1111,
-      "big_move_prob": 0.1111,
-      "flagged": false,
-      "conviction": false,
-      "price": 294.38,
-      "sentiment": 0.0,
-      "sentiment_spark": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "hit_rate": 0.2414,
-      "n_predictions": 29,
-      "why": [
-        "\u2191 ma5_ratio",
         "\u2193 VIX",
-        "\u2193 volume_vs_ma"
+        "\u2191 dow"
       ],
       "earnings_day": 0
     },
     {
-      "ticker": "LCID",
-      "sector": "auto",
-      "direction": "\u25bc",
-      "pred_up": false,
-      "confidence": 0.8889,
-      "p_up": 0.1111,
-      "big_move_prob": 0.1111,
-      "flagged": false,
-      "conviction": false,
-      "price": 6.63,
-      "sentiment": 0.0,
-      "sentiment_spark": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "hit_rate": 0.4828,
-      "n_predictions": 29,
-      "why": [
-        "\u2191 ret_5",
-        "\u2191 ma20_ratio",
-        "\u2191 ret_10"
-      ],
-      "earnings_day": 0
-    },
-    {
-      "ticker": "AMD",
+      "ticker": "MRVL",
       "sector": "semis",
       "direction": "\u25bc",
       "pred_up": false,
-      "confidence": 0.896,
-      "p_up": 0.104,
-      "big_move_prob": 0.104,
+      "confidence": 0.8889,
+      "p_up": 0.1111,
+      "big_move_prob": 0.1111,
       "flagged": false,
       "conviction": false,
-      "price": 540.88,
+      "price": 245.29,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -1631,11 +1588,11 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.4828,
-      "n_predictions": 29,
+      "hit_rate": 0.5667,
+      "n_predictions": 30,
       "why": [
-        "\u2191 MACD",
         "\u2191 vol_20",
+        "\u2193 ret_2",
         "\u2193 ret_1"
       ],
       "earnings_day": 0
@@ -1650,7 +1607,7 @@
       "big_move_prob": 0.104,
       "flagged": false,
       "conviction": false,
-      "price": 337.47,
+      "price": 315.28,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -1674,18 +1631,18 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.6552,
-      "n_predictions": 29,
+      "hit_rate": 0.6667,
+      "n_predictions": 30,
       "why": [
         "\u2191 vol_20",
-        "\u2191 MACD",
-        "\u2193 volume_vs_ma"
+        "\u2193 ret_2",
+        "\u2193 ret_10"
       ],
       "earnings_day": 0
     },
     {
-      "ticker": "INTC",
-      "sector": "semis",
+      "ticker": "COIN",
+      "sector": "crypto",
       "direction": "\u25bc",
       "pred_up": false,
       "confidence": 0.896,
@@ -1693,7 +1650,7 @@
       "big_move_prob": 0.104,
       "flagged": false,
       "conviction": false,
-      "price": 127.02,
+      "price": 165.48,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -1717,18 +1674,61 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.5862,
-      "n_predictions": 29,
+      "hit_rate": 0.5333,
+      "n_predictions": 30,
       "why": [
-        "\u2191 vol_20",
+        "\u2191 ret_2",
+        "\u2191 ret_5",
+        "\u2191 ma5_ratio"
+      ],
+      "earnings_day": 0
+    },
+    {
+      "ticker": "META",
+      "sector": "tech",
+      "direction": "\u25bc",
+      "pred_up": false,
+      "confidence": 0.896,
+      "p_up": 0.104,
+      "big_move_prob": 0.104,
+      "flagged": false,
+      "conviction": false,
+      "price": 582.9,
+      "sentiment": 0.0,
+      "sentiment_spark": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hit_rate": 0.2,
+      "n_predictions": 30,
+      "why": [
         "\u2193 ret_1",
-        "\u2191 vol_5"
+        "\u2193 volume_change",
+        "\u2193 MACD"
       ],
       "earnings_day": 0
     },
     {
-      "ticker": "MRVL",
-      "sector": "semis",
+      "ticker": "SHOP",
+      "sector": "software",
       "direction": "\u25bc",
       "pred_up": false,
       "confidence": 0.896,
@@ -1736,7 +1736,7 @@
       "big_move_prob": 0.104,
       "flagged": false,
       "conviction": false,
-      "price": 272.05,
+      "price": 119.46,
       "sentiment": 0.0,
       "sentiment_spark": [
         0.0,
@@ -1760,16 +1760,16 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.5517,
-      "n_predictions": 29,
+      "hit_rate": 0.6,
+      "n_predictions": 30,
       "why": [
-        "\u2191 vol_20",
-        "\u2191 MACD",
-        "\u2193 ret_1"
+        "\u2191 ret_5",
+        "\u2193 VIX",
+        "\u2191 ret_3"
       ],
       "earnings_day": 0
     }
   ],
   "disclaimer": "Experimental volatility radar \u2014 flags stocks likely to make an outsized move (either direction). Not a buy signal, not financial advice.",
-  "updated_at": "2026-07-02T23:05:33.558715+00:00"
+  "updated_at": "2026-07-03T23:02:26.262242+00:00"
 }
