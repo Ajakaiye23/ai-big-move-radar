@@ -121,6 +121,63 @@ def get_text(ticker: str, prices: pd.DataFrame, cfg: dict,
     return df, {"source": "synthetic", "ticker": ticker, "rows": len(df), "seed": seed}
 
 
+def expected_move(ticker: str) -> float | None:
+    """Options-implied expected move for the nearest expiry, as a fraction of spot.
+    Approximated by the at-the-money straddle price / spot. Robust to yfinance
+    flakiness (returns None on any failure)."""
+    try:
+        import yfinance as yf
+        tk = yf.Ticker(ticker)
+        exps = tk.options
+        if not exps:
+            return None
+        spot = None
+        try:
+            spot = float(tk.fast_info["last_price"])
+        except Exception:  # noqa: BLE001
+            hist = tk.history(period="1d")
+            spot = float(hist["Close"].iloc[-1]) if len(hist) else None
+        if not spot:
+            return None
+        chain = tk.option_chain(exps[0])
+        calls, puts = chain.calls, chain.puts
+        if calls.empty or puts.empty:
+            return None
+        ci = (calls["strike"] - spot).abs().idxmin()
+        pi = (puts["strike"] - spot).abs().idxmin()
+        def mid(df, i):
+            b, a = df.loc[i, "bid"], df.loc[i, "ask"]
+            return (b + a) / 2 if (b and a) else df.loc[i, "lastPrice"]
+        em = (float(mid(calls, ci)) + float(mid(puts, pi))) / spot
+        return round(em, 4) if 0 < em < 1 else None
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def next_earnings(ticker: str) -> tuple[int, str] | tuple[None, None]:
+    """Days until the next earnings date (and the date), via Finnhub's calendar.
+    Needs FINNHUB_API_KEY; returns (None, None) if unavailable."""
+    import datetime as dt
+    if not os.getenv("FINNHUB_API_KEY"):
+        return None, None
+    try:
+        import requests
+        today = dt.date.today()
+        r = requests.get("https://finnhub.io/api/v1/calendar/earnings", timeout=20, params={
+            "symbol": ticker, "from": today.isoformat(),
+            "to": (today + dt.timedelta(days=120)).isoformat(),
+            "token": os.environ["FINNHUB_API_KEY"]})
+        r.raise_for_status()
+        dates = sorted(e["date"] for e in r.json().get("earningsCalendar", [])
+                       if e.get("date", "") >= today.isoformat())
+        if dates:
+            d = dt.date.fromisoformat(dates[0])
+            return (d - today).days, dates[0]
+    except Exception:  # noqa: BLE001
+        pass
+    return None, None
+
+
 def _have_reddit_keys() -> bool:
     return bool(os.getenv("REDDIT_CLIENT_ID") and os.getenv("REDDIT_CLIENT_SECRET"))
 

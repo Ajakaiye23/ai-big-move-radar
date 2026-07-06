@@ -282,6 +282,41 @@ def _recent_sentiment(panel: pd.DataFrame, ticker: str, n=20) -> list[float]:
     return [round(float(x), 4) for x in sub.get("sent_mean", pd.Series(dtype=float))]
 
 
+def _recent_prices(panel: pd.DataFrame, ticker: str, n=30) -> list[float]:
+    sub = panel[panel["ticker"] == ticker].sort_values("date").tail(n)
+    return [round(float(x), 2) for x in sub.get("close", pd.Series(dtype=float))]
+
+
+def _enrich_market_context(cfg, watchlist, panel, latest):
+    """Add live extras the dashboard shows: options expected-move + next earnings
+    per ticker, and the current VIX regime. Live mode only, and every call is
+    guarded so a flaky fetch just leaves the field blank."""
+    from .data import sources
+    if cfg["data"]["mode"] not in ("live", "auto"):
+        return None
+    for row in watchlist:
+        try:
+            em = sources.expected_move(row["ticker"])
+            if em is not None:
+                row["expected_move"] = em
+        except Exception:  # noqa: BLE001
+            pass
+        try:
+            days, date = sources.next_earnings(row["ticker"])
+            if days is not None:
+                row["earnings_in"] = days
+                row["earnings_date"] = date
+        except Exception:  # noqa: BLE001
+            pass
+    # current VIX regime from the panel
+    day = panel[panel["date"] == pd.Timestamp(latest)]
+    vix = float(day["vix_level"].mean()) if "vix_level" in day and len(day) else None
+    if vix is None:
+        return None
+    label = "calm" if vix < 15 else "normal" if vix < 22 else "jumpy" if vix < 30 else "stormy"
+    return {"vix": round(vix, 1), "regime": label}
+
+
 def _emit_dashboard(cfg, plog, panel, bundle, latest):
     site = utils.p(cfg, "site_data")
     preds = plog["predictions"]
@@ -329,10 +364,13 @@ def _emit_dashboard(cfg, plog, panel, bundle, latest):
             "flagged": bool(e["_flagged"]) if big_move else bool(e["pred_up"]),
             "conviction": bool(e["_conv"]) if big_move else bool(rank_score(e) >= conv_thr),
             "price": round(float(latest_close.get(e["ticker"], 0.0)), 2),
+            "price_spark": _recent_prices(panel, e["ticker"]),
             "sentiment": e["sent_mean"], "sentiment_spark": _recent_sentiment(panel, e["ticker"]),
             "hit_rate": pr["hit_rate"], "n_predictions": pr["n"],
             "why": e.get("why", []), "earnings_day": e["earnings_day"],
         })
+
+    market_ctx = _enrich_market_context(cfg, watchlist, panel, latest)  # options/earnings/VIX (live)
 
     predictions_json = {
         "as_of": latest,
@@ -341,6 +379,7 @@ def _emit_dashboard(cfg, plog, panel, bundle, latest):
         "aggregate_hit_rate": agg,
         "n_reconciled": n_done,
         "baseline": baseline,
+        "market_context": market_ctx,
         "watchlist": watchlist,
         "disclaimer": ("Experimental volatility radar — flags stocks likely to make an "
                        "outsized move (either direction). Not a buy signal, not financial advice."

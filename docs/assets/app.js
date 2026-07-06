@@ -179,8 +179,9 @@ function renderFreshness(p) {
   const el = document.getElementById("freshness");
   const when = p.updated_at ? new Date(p.updated_at) : null;
   el.textContent = `as of ${p.as_of}${when ? " · updated " + when.toLocaleString() : ""}`;
-  const modeTxt = p.data_mode === "offline"
-    ? "⚙︎ synthetic data (mechanics demo)" : "live data";
+  let modeTxt = p.data_mode === "offline" ? "⚙︎ synthetic data (mechanics demo)" : "live data";
+  const mc = p.market_context;
+  if (mc && mc.vix != null) modeTxt += ` · VIX ${mc.vix} (${mc.regime})`;
   document.getElementById("mode-note").textContent = modeTxt;
   document.getElementById("footer-mode").textContent =
     p.data_mode === "offline" ? "Running on synthetic data — swap config data.mode to 'live' for real markets." : "";
@@ -189,6 +190,7 @@ function renderFreshness(p) {
 function renderBanner(p, port, mood) {
   const agg = document.getElementById("agg-hitrate");
   const base = (p.baseline != null) ? p.baseline : 0.5;
+  window._BASE = base;
   agg.textContent = fmtPct(p.aggregate_hit_rate);
   agg.style.color = p.aggregate_hit_rate == null ? css("--muted")
     : p.aggregate_hit_rate > base ? css("--up") : css("--down");
@@ -270,41 +272,116 @@ function sparkline(vals) {
   return `<svg class="spark" width="${w}" height="${h}"><polyline points="${pts}" fill="none" stroke="${col}" stroke-width="1.6"/></svg>`;
 }
 
+/* ----- watchlist: sortable, filterable, with a personal star list ----- */
+const STAR_KEY = "starred_v1";
+const getStars = () => new Set(JSON.parse(localStorage.getItem(STAR_KEY) || "[]"));
+const toggleStar = (t) => { const s = getStars(); s.has(t) ? s.delete(t) : s.add(t); localStorage.setItem(STAR_KEY, JSON.stringify([...s])); };
+const wlState = { sort: null, dir: -1, flaggedOnly: false, myOnly: false, sector: "all" };
+
 function renderWatchlist(p) {
+  window._WL = p.watchlist || [];
+  // build the sector filter once
+  const sel = document.getElementById("wl-sector");
+  if (sel && !sel.dataset.built) {
+    const sectors = [...new Set(window._WL.map((r) => r.sector))].sort();
+    sel.innerHTML = `<option value="all">all sectors</option>` + sectors.map((s) => `<option value="${s}">${s}</option>`).join("");
+    sel.dataset.built = "1";
+    sel.onchange = () => { wlState.sector = sel.value; renderWatchlistRows(); };
+    document.getElementById("wl-flagged").onchange = (e) => { wlState.flaggedOnly = e.target.checked; renderWatchlistRows(); };
+    document.getElementById("wl-mine").onchange = (e) => { wlState.myOnly = e.target.checked; renderWatchlistRows(); };
+    document.querySelectorAll("#watchlist thead th[data-sort]").forEach((th) =>
+      th.onclick = () => {
+        const k = th.dataset.sort;
+        if (wlState.sort === k) wlState.dir *= -1; else { wlState.sort = k; wlState.dir = (k === "ticker" || k === "sector") ? 1 : -1; }
+        renderWatchlistRows();
+      });
+  }
+  renderWatchlistRows();
+}
+
+function renderWatchlistRows() {
+  const rows0 = window._WL || [];
+  const stars = getStars();
+  const big = (window.TARGET_TYPE === "big_move");
+  const key = wlState.sort || (big ? "big_move_prob" : "confidence");
+  let rows = rows0.filter((r) =>
+    (!wlState.flaggedOnly || r.flagged) &&
+    (!wlState.myOnly || stars.has(r.ticker)) &&
+    (wlState.sector === "all" || r.sector === wlState.sector));
+  rows = rows.slice().sort((a, b) => {
+    let va = a[key], vb = b[key];
+    if (typeof va === "string") return wlState.dir * va.localeCompare(vb);
+    va = va ?? -Infinity; vb = vb ?? -Infinity;
+    return wlState.dir * (va - vb);
+  });
+
   const tb = document.getElementById("watchlist").querySelector("tbody");
+  if (!rows.length) { tb.innerHTML = `<tr class="empty"><td colspan="10">Nothing matches these filters.</td></tr>`; return; }
   tb.innerHTML = "";
-  p.watchlist.forEach((row, i) => {
+  rows.forEach((row, i) => {
     const tr = document.createElement("tr");
     const conf = Math.round(row.confidence * 100);
     const hr = row.hit_rate;
-    const hrCls = hr == null ? "hitrate-na" : hr >= 0.5 ? "hitrate-good" : "hitrate-bad";
+    const hrCls = hr == null ? "hitrate-na" : hr >= (window._BASE || 0.5) ? "hitrate-good" : "hitrate-bad";
     const price = row.price ? "$" + row.price.toFixed(2) : "—";
-    const big = (window.TARGET_TYPE === "big_move");
+    const starred = stars.has(row.ticker);
+    const earnBadge = row.earnings_in != null && row.earnings_in <= 7
+      ? `<span class="badge earn" title="earnings in ${row.earnings_in} day(s)">📅 ${row.earnings_in}d</span>`
+      : (row.earnings_day ? '<span class="badge">EARN</span>' : "");
+    const emBadge = row.expected_move != null
+      ? `<span class="em" title="options-implied move this expiry">±${(row.expected_move * 100).toFixed(1)}%</span>` : "";
     const callCell = big
       ? `<span class="${row.flagged ? "call-up" : "sector"}">${row.flagged ? "⚡ likely" : "· calm"}</span>
-         ${row.conviction ? '<span class="badge conv">HIGH</span>' : ""}
-         ${row.earnings_day ? '<span class="badge">EARN</span>' : ""}`
+         ${row.conviction ? '<span class="badge conv">HIGH</span>' : ""} ${earnBadge}`
       : `<span class="${row.pred_up ? "call-up" : "call-down"}">${row.direction} ${row.pred_up ? "up" : "down"}</span>
-         ${row.conviction ? '<span class="badge conv">CONV</span>' : ""}
-         ${row.earnings_day ? '<span class="badge">EARN</span>' : ""}`;
+         ${row.conviction ? '<span class="badge conv">CONV</span>' : ""} ${earnBadge}`;
     const probPct = big ? Math.round((row.big_move_prob ?? 0) * 100) : conf;
     tr.innerHTML = `
-      <td>${i + 1}</td>
+      <td><span class="star ${starred ? "on" : ""}" data-tk="${row.ticker}">${starred ? "★" : "☆"}</span> ${i + 1}</td>
       <td><span class="tk">${row.ticker}</span></td>
       <td class="sector">${row.sector}</td>
       <td>${callCell}</td>
-      <td><div class="confbar"><span style="width:${probPct}%"></span><b>${probPct}%</b></div></td>
+      <td><div class="confbar"><span style="width:${probPct}%"></span><b>${probPct}%</b></div> ${emBadge}</td>
       <td>${price}</td>
       <td>${sparkline(row.sentiment_spark)}</td>
       <td class="${hrCls}">${hr == null ? "n/a" : fmtPct(hr)} ${row.n_predictions ? `<small>(${row.n_predictions})</small>` : ""}</td>
       <td class="why">${(row.why || []).join(", ")}</td>
       <td>${row.price ? `<div class="trade-btns"><button class="buy" data-tk="${row.ticker}" data-px="${row.price}">Buy</button></div>` : ""}</td>`;
+    tr.onclick = (ev) => { if (!ev.target.closest(".buy,.star")) openDetail(row); };
     tb.appendChild(tr);
   });
-  tb.querySelectorAll(".buy").forEach((b) => b.onclick = (ev) => {
-    ev.stopPropagation();
-    ptBuy(b.dataset.tk, parseFloat(b.dataset.px));
-  });
+  tb.querySelectorAll(".buy").forEach((b) => b.onclick = (ev) => { ev.stopPropagation(); ptBuy(b.dataset.tk, parseFloat(b.dataset.px)); });
+  tb.querySelectorAll(".star").forEach((s) => s.onclick = (ev) => { ev.stopPropagation(); toggleStar(s.dataset.tk); renderWatchlistRows(); });
+}
+
+function openDetail(row) {
+  const m = document.getElementById("detail-modal");
+  if (!m) return;
+  const big = window.TARGET_TYPE === "big_move";
+  const spark = row.price_spark && row.price_spark.length
+    ? sparkPrice(row.price_spark) : '<span class="hint">price history not available yet</span>';
+  m.querySelector(".dm-body").innerHTML = `
+    <div class="dm-head"><span class="tk">${row.ticker}</span> <span class="sector">${row.sector}</span>
+      <span class="star ${getStars().has(row.ticker) ? "on" : ""}" data-tk="${row.ticker}">${getStars().has(row.ticker) ? "★" : "☆"}</span></div>
+    <div class="dm-row"><b>${big ? "Big-move probability" : "Confidence"}:</b> ${Math.round((big ? row.big_move_prob : row.confidence) * 100)}%
+      ${row.conviction ? '<span class="badge conv">HIGH</span>' : ""}
+      ${row.flagged ? '<span class="call-up">⚡ flagged</span>' : '<span class="sector">calm</span>'}</div>
+    ${row.expected_move != null ? `<div class="dm-row"><b>Options imply:</b> ±${(row.expected_move * 100).toFixed(1)}% this expiry <span class="hint">(the market's own big-move estimate)</span></div>` : ""}
+    ${row.earnings_in != null ? `<div class="dm-row"><b>Next earnings:</b> in ${row.earnings_in} day(s) ${row.earnings_date ? `(${row.earnings_date})` : ""}</div>` : ""}
+    <div class="dm-row"><b>Price (recent):</b><br>${spark}</div>
+    <div class="dm-row"><b>Why the model flagged it:</b> ${(row.why || []).join(", ") || "—"}</div>
+    <div class="dm-row"><b>Sentiment (20d):</b> ${sparkline(row.sentiment_spark)} &nbsp; latest ${row.sentiment != null ? row.sentiment.toFixed(3) : "—"}</div>
+    <div class="dm-row"><b>Track record:</b> ${row.hit_rate == null ? "no resolved calls yet" : fmtPct(row.hit_rate) + " on " + (row.n_predictions || 0) + " calls"}</div>
+    <div class="dm-row"><button class="pt-btn" onclick="if(${!!row.price}){ptBuy('${row.ticker}',${row.price || 0})}">Add to paper portfolio</button></div>`;
+  m.querySelector(".dm-body .star").onclick = (e) => { toggleStar(e.target.dataset.tk); renderWatchlistRows(); openDetail(row); };
+  m.classList.add("open");
+}
+
+function sparkPrice(vals) {
+  const w = 320, h = 60, min = Math.min(...vals), max = Math.max(...vals), r = max - min || 1;
+  const pts = vals.map((v, i) => `${(i / (vals.length - 1)) * w},${h - ((v - min) / r) * h}`).join(" ");
+  const col = vals[vals.length - 1] >= vals[0] ? css("--up") : css("--down");
+  return `<svg width="${w}" height="${h}" style="max-width:100%"><polyline points="${pts}" fill="none" stroke="${col}" stroke-width="2"/></svg>`;
 }
 
 /* ---------- Paper trading (fake money, localStorage) ---------- */

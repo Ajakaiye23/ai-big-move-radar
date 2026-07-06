@@ -7,7 +7,7 @@
   <meta name="description" content="Experimental directional signal tracker — does social sentiment add predictive signal beyond price/volume? Not financial advice."/>
   <link rel="manifest" href="manifest.webmanifest"/>
   <meta name="theme-color" content="#0e1117"/>
-  <link rel="stylesheet" href="assets/style.css?v=9"/>
+  <link rel="stylesheet" href="assets/style.css?v=10"/>
 </head>
 <body data-theme="dark">
   <header class="topbar">
@@ -101,6 +101,31 @@
       </p>
     </section>
 
+    <!-- FAQ -->
+    <section class="panel" id="faq">
+      <h2>FAQ <span class="hint">the questions you're probably asking</span></h2>
+      <details><summary>Is this telling me what to buy?</summary>
+        <p>No. It flags stocks that look likely to make a <em>big move</em>, but it doesn't say which
+        direction. It's a heads-up for "something might happen here," not a buy or sell call. Please
+        don't trade real money off it.</p></details>
+      <details><summary>Why not just predict up or down?</summary>
+        <p>Because you basically can't. I tried, and next-day direction came out to a coin flip on real
+        data. Volatility (how <em>much</em> a stock moves) actually clusters and is predictable, so that's
+        what this does instead.</p></details>
+      <details><summary>How good is it, really?</summary>
+        <p>Modest and honest. It ranks big-move days a bit better than chance (AUC around 0.58), and on the
+        days it flags, stocks do move more than they usually do. It's a small real edge, not a crystal ball.</p></details>
+      <details><summary>Where does the data come from?</summary>
+        <p>Prices from Yahoo Finance, news from Finnhub scored by FinBERT (a finance-tuned language model),
+        plus market context like the VIX. It refreshes daily after the US close.</p></details>
+      <details><summary>What does "±6%" next to a stock mean?</summary>
+        <p>That's the move the <em>options market</em> is pricing in for the next expiry. It's the market's
+        own big-move estimate, handy to compare against what the model thinks.</p></details>
+      <details><summary>Can I trust the leaderboard scores?</summary>
+        <p>Take them with a grain of salt. They're submitted from people's browsers, so it's a fun scoreboard,
+        not a tamper-proof one.</p></details>
+    </section>
+
     <!-- 2. Paper portfolio vs buy-and-hold -->
     <section class="panel">
       <h2>Live paper portfolio <span class="hint">follows the model's signals from launch vs buy-and-hold</span></h2>
@@ -111,13 +136,18 @@
     <section class="panel">
       <h2>Ranked watchlist <span class="hint">sorted by model confidence — every row shows its real hit-rate</span></h2>
       <div class="controls">
+        <select id="wl-sector"><option value="all">all sectors</option></select>
+        <label class="toggle"><input type="checkbox" id="wl-flagged"/> flagged only</label>
+        <label class="toggle"><input type="checkbox" id="wl-mine"/> ⭐ my stocks</label>
         <label class="toggle"><input type="checkbox" id="sentiment-toggle" checked/> use sentiment group</label>
         <span class="controls-note" id="toggle-note"></span>
+        <span class="controls-note">click a column to sort · click a row for detail</span>
       </div>
       <table id="watchlist">
         <thead><tr>
-          <th>#</th><th>Ticker</th><th>Sector</th><th>Call</th>
-          <th>Confidence</th><th>Price</th><th>Sentiment (20d)</th><th>Hit-rate</th><th>Why</th><th>Trade</th>
+          <th>#</th><th data-sort="ticker">Ticker</th><th data-sort="sector">Sector</th><th data-sort="flagged">Call</th>
+          <th data-sort="big_move_prob">Confidence</th><th data-sort="price">Price</th>
+          <th data-sort="sentiment">Sentiment (20d)</th><th data-sort="hit_rate">Hit-rate</th><th>Why</th><th>Trade</th>
         </tr></thead>
         <tbody></tbody>
       </table>
@@ -215,12 +245,20 @@
     </section>
   </main>
 
+  <!-- per-stock detail (opens on row click) -->
+  <div id="detail-modal" class="dm">
+    <div class="dm-card">
+      <button class="dm-close" onclick="document.getElementById('detail-modal').classList.remove('open')">✕</button>
+      <div class="dm-body"></div>
+    </div>
+  </div>
+
   <footer>
     <p>Built with the AI-stock-sentiment methodology: predict <em>direction not price</em>, beat baselines,
        no leakage, honest ablation. <span id="footer-mode"></span></p>
     <p class="fine">Not financial advice. For research and education only.</p>
   </footer>
 
-  <script src="assets/app.js?v=11"></script>
+  <script src="assets/app.js?v=12"></script>
 </body>
 </html>

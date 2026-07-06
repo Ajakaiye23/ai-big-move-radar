@@ -6,6 +6,15 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8765", "--directory", "docs"],
       "port": 8765
+    },
+    {
+      "name": "debateweb",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "cd /d C:\\Users\\blkg2\\debate_ai && nodejs\\npx.cmd expo start --web --offline --port 8090"
+      ],
+      "port": 8090
     }
   ]
 }
