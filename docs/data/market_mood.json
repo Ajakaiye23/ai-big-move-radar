@@ -1,23 +1,23 @@
 {
   "as_of": "2026-07-02",
-  "universe_sentiment": 0.0233,
+  "universe_sentiment": 0.0407,
   "top_bullish": [
-    "MSTR",
+    "ARM",
     "PYPL",
-    "ARM"
+    "NIO"
   ],
   "top_bearish": [
     "LCID",
-    "NIO",
-    "GME"
+    "GME",
+    "RIVN"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
     "tech": 0.833,
     "consumer": 1.0,
-    "software": 0.8,
+    "software": 0.6,
     "meme": 1.0,
-    "semis": 0.778,
+    "semis": 0.556,
     "industrial": 1.0,
     "crypto": 0.5,
     "media": 1.0,
