@@ -26582,9 +26582,9 @@
         "\u2193 sent_surprise",
         "\u2191 bearish share"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.00772
     },
     {
       "date": "2026-07-13",
@@ -26600,9 +26600,9 @@
         "\u2191 sent_surprise",
         "\u2191 post volume"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.00144
     },
     {
       "date": "2026-07-13",
@@ -26618,9 +26618,9 @@
         "\u2193 sent_surprise",
         "\u2193 sentiment momentum"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.04263
     },
     {
       "date": "2026-07-13",
@@ -26636,9 +26636,9 @@
         "\u2191 bearish share",
         "\u2193 sentiment"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.04813
     },
     {
       "date": "2026-07-13",
@@ -26654,9 +26654,9 @@
         "\u2191 MACD",
         "\u2191 bearish share"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.02571
     },
     {
       "date": "2026-07-13",
@@ -26672,9 +26672,9 @@
         "\u2191 bearish share",
         "\u2193 dow"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.00073
     },
     {
       "date": "2026-07-13",
@@ -26690,9 +26690,9 @@
         "\u2191 post volume",
         "\u2193 sent_surprise"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.0596
     },
     {
       "date": "2026-07-13",
@@ -26708,9 +26708,9 @@
         "\u2191 sent_roll5",
         "\u2191 bearish share"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.01318
     },
     {
       "date": "2026-07-13",
@@ -26726,9 +26726,9 @@
         "\u2191 sent_surprise",
         "\u2191 sent_roll10"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.00742
     },
     {
       "date": "2026-07-13",
@@ -26744,9 +26744,9 @@
         "\u2191 bearish share",
         "\u2193 sent_surprise"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.02624
     },
     {
       "date": "2026-07-13",
@@ -26762,9 +26762,9 @@
         "\u2191 sentiment momentum",
         "\u2193 MACD"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.00505
     },
     {
       "date": "2026-07-13",
@@ -26780,9 +26780,9 @@
         "\u2193 sent_surprise",
         "\u2191 bearish share"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.02138
     },
     {
       "date": "2026-07-13",
@@ -26798,9 +26798,9 @@
         "\u2191 sent_roll10",
         "\u2191 sent_roll5"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.01811
     },
     {
       "date": "2026-07-13",
@@ -26816,9 +26816,9 @@
         "\u2191 bearish share",
         "\u2193 dow"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.00135
     },
     {
       "date": "2026-07-13",
@@ -26834,9 +26834,9 @@
         "\u2191 sent_roll5",
         "\u2191 sent_roll10"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.01816
     },
     {
       "date": "2026-07-13",
@@ -26852,9 +26852,9 @@
         "\u2191 bearish share",
         "\u2193 sentiment momentum"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.01986
     },
     {
       "date": "2026-07-13",
@@ -26870,9 +26870,9 @@
         "\u2191 sent_surprise",
         "\u2191 sent_roll10"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.03268
     },
     {
       "date": "2026-07-13",
@@ -26888,9 +26888,9 @@
         "\u2193 ret_5",
         "\u2191 bearish share"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.045
     },
     {
       "date": "2026-07-13",
@@ -26906,9 +26906,9 @@
         "\u2191 sent_surprise",
         "\u2191 bearish share"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 1,
+      "correct": 1,
+      "realized_ret": 0.02499
     },
     {
       "date": "2026-07-13",
@@ -26924,9 +26924,9 @@
         "\u2193 ret_5",
         "\u2191 sent_roll5"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 1,
+      "correct": 1,
+      "realized_ret": -0.16152
     },
     {
       "date": "2026-07-13",
@@ -26942,9 +26942,9 @@
         "\u2191 sent_surprise",
         "\u2191 bearish share"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.00656
     },
     {
       "date": "2026-07-13",
@@ -26960,9 +26960,9 @@
         "\u2191 sent_surprise",
         "\u2191 vol_20"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.02257
     },
     {
       "date": "2026-07-13",
@@ -26978,9 +26978,9 @@
         "\u2191 sent_surprise",
         "\u2191 bearish share"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.0155
     },
     {
       "date": "2026-07-13",
@@ -26996,9 +26996,9 @@
         "\u2191 sentiment momentum",
         "\u2193 volume_vs_ma"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.0595
     },
     {
       "date": "2026-07-13",
@@ -27014,9 +27014,9 @@
         "\u2193 sent_surprise",
         "\u2191 vol_20"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.04922
     },
     {
       "date": "2026-07-13",
@@ -27032,9 +27032,9 @@
         "\u2193 sent_surprise",
         "\u2191 bearish share"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.00406
     },
     {
       "date": "2026-07-13",
@@ -27050,9 +27050,9 @@
         "\u2191 sentiment",
         "\u2191 sent_roll10"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.01623
     },
     {
       "date": "2026-07-13",
@@ -27068,9 +27068,9 @@
         "\u2191 vix_change",
         "\u2193 market return"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 1,
+      "correct": 1,
+      "realized_ret": 0.04063
     },
     {
       "date": "2026-07-13",
@@ -27086,9 +27086,9 @@
         "\u2191 bearish share",
         "\u2193 MACD"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.02737
     },
     {
       "date": "2026-07-13",
@@ -27104,9 +27104,9 @@
         "\u2191 sent_surprise",
         "\u2191 bearish share"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.0283
     },
     {
       "date": "2026-07-13",
@@ -27122,9 +27122,9 @@
         "\u2193 sentiment momentum",
         "\u2191 sent_roll5"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.00588
     },
     {
       "date": "2026-07-13",
@@ -27140,9 +27140,9 @@
         "\u2191 sent_roll10",
         "\u2191 sent_surprise"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.03196
     },
     {
       "date": "2026-07-13",
@@ -27158,9 +27158,9 @@
         "\u2193 sent_roll5",
         "\u2191 sent_surprise"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.01117
     },
     {
       "date": "2026-07-13",
@@ -27176,9 +27176,9 @@
         "\u2193 sentiment momentum",
         "\u2191 post volume"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.01098
     },
     {
       "date": "2026-07-13",
@@ -27194,9 +27194,9 @@
         "\u2191 sent_roll10",
         "\u2191 sent_roll5"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.00754
     },
     {
       "date": "2026-07-13",
@@ -27212,9 +27212,9 @@
         "\u2191 vol_20",
         "\u2191 sent_surprise"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.00036
     },
     {
       "date": "2026-07-13",
@@ -27230,9 +27230,9 @@
         "\u2191 sent_roll5",
         "\u2193 sent_surprise"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.02317
     },
     {
       "date": "2026-07-13",
@@ -27248,9 +27248,9 @@
         "\u2191 bearish share",
         "\u2193 dow"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.00355
     },
     {
       "date": "2026-07-13",
@@ -27266,9 +27266,9 @@
         "\u2193 sent_surprise",
         "\u2191 bearish share"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.0036
     },
     {
       "date": "2026-07-13",
@@ -27284,9 +27284,9 @@
         "\u2191 bearish share",
         "\u2193 sent_surprise"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.02936
     },
     {
       "date": "2026-07-13",
@@ -27302,11 +27302,749 @@
         "\u2191 sent_surprise",
         "\u2193 dow"
       ],
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.00941
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "AAPL",
+      "sector": "tech",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.1784,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 sent_surprise",
+        "\u2191 bearish share"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "ABNB",
+      "sector": "consumer",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.0935,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 sentiment momentum",
+        "\u2191 sent_roll10"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "ADBE",
+      "sector": "software",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.5856,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 bearish share",
+        "\u2193 sent_surprise"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "AMC",
+      "sector": "meme",
+      "pred_up": false,
+      "p_up": 0.104,
+      "confidence": 0.896,
+      "sent_mean": 0.6235,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 sentiment momentum",
+        "\u2191 sentiment",
+        "\u2191 vol_20"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "AMD",
+      "sector": "semis",
+      "pred_up": false,
+      "p_up": 0.104,
+      "confidence": 0.896,
+      "sent_mean": 0.2176,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 sent_surprise",
+        "\u2191 MACD"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "AMZN",
+      "sector": "consumer",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.0048,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 bearish share",
+        "\u2191 sent_surprise"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "ARM",
+      "sector": "semis",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.0298,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 bearish share",
+        "\u2191 post volume",
+        "\u2193 ret_3"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "AVGO",
+      "sector": "semis",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.1511,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 sent_surprise",
+        "\u2191 sent_roll5"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "BA",
+      "sector": "industrial",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.4683,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 sent_surprise",
+        "\u2191 sentiment"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "COIN",
+      "sector": "crypto",
+      "pred_up": false,
+      "p_up": 0.104,
+      "confidence": 0.896,
+      "sent_mean": -0.1537,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 sent_surprise",
+        "\u2191 bearish share"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "COST",
+      "sector": "consumer",
+      "pred_up": true,
+      "p_up": 0.1362,
+      "confidence": 0.8638,
+      "sent_mean": 0.5018,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 sent_surprise",
+        "\u2191 sentiment"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "CRM",
+      "sector": "software",
+      "pred_up": false,
+      "p_up": 0.104,
+      "confidence": 0.896,
+      "sent_mean": -0.4032,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 sent_surprise",
+        "\u2191 bearish share"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "CSCO",
+      "sector": "tech",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.1837,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 sent_roll10",
+        "\u2191 sent_roll5"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "DIS",
+      "sector": "media",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.1586,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 sent_surprise",
+        "\u2191 bearish share"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "GME",
+      "sector": "meme",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.3473,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 sent_roll5",
+        "\u2191 sent_roll10",
+        "\u2191 sentiment"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "GOOGL",
+      "sector": "tech",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.0383,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 bearish share",
+        "\u2193 sent_surprise"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "HOOD",
+      "sector": "fintech",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.1219,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 sent_roll10",
+        "\u2191 sent_roll5"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "INTC",
+      "sector": "semis",
+      "pred_up": false,
+      "p_up": 0.104,
+      "confidence": 0.896,
+      "sent_mean": 0.0549,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 bearish share",
+        "\u2191 vol_20"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "JPM",
+      "sector": "financials",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.0556,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 sent_surprise",
+        "\u2191 bearish share"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "LCID",
+      "sector": "auto",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.0471,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 volume_change",
+        "\u2191 volume_vs_ma",
+        "\u2193 ret_3"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "META",
+      "sector": "tech",
+      "pred_up": false,
+      "p_up": 0.104,
+      "confidence": 0.896,
+      "sent_mean": -0.1119,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 sent_surprise",
+        "\u2191 bearish share"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "MRVL",
+      "sector": "semis",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.1028,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 vol_20",
+        "\u2191 bearish share"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "MSFT",
+      "sector": "tech",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.0686,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 sent_surprise",
+        "\u2191 bearish share"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "MSTR",
+      "sector": "crypto",
+      "pred_up": false,
+      "p_up": 0.104,
+      "confidence": 0.896,
+      "sent_mean": -0.0124,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 bearish share",
+        "\u2191 vol_20"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "MU",
+      "sector": "semis",
+      "pred_up": false,
+      "p_up": 0.104,
+      "confidence": 0.896,
+      "sent_mean": 0.0086,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 vol_20",
+        "\u2191 bearish share"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "NFLX",
+      "sector": "media",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.2673,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 sent_surprise",
+        "\u2191 bearish share"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "NIO",
+      "sector": "auto",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.234,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 sent_roll5",
+        "\u2191 sent_roll10",
+        "\u2191 sentiment"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "NVDA",
+      "sector": "semis",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.0,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 ret_5",
+        "\u2191 ret_1",
+        "\u2191 ret_3"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "ORCL",
+      "sector": "software",
+      "pred_up": true,
+      "p_up": 0.1727,
+      "confidence": 0.8273,
+      "sent_mean": -0.1605,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 bearish share",
+        "\u2193 sent_surprise"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "PLTR",
+      "sector": "software",
+      "pred_up": false,
+      "p_up": 0.104,
+      "confidence": 0.896,
+      "sent_mean": -0.1544,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 bearish share",
+        "\u2193 sent_surprise"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "PYPL",
+      "sector": "fintech",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.1702,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 sent_roll5",
+        "\u2191 bearish share",
+        "\u2191 post volume"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "QCOM",
+      "sector": "semis",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.0106,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 sent_roll10",
+        "\u2191 bearish share"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "QQQ",
+      "sector": "etf",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.1875,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 bearish share",
+        "\u2193 sent_surprise"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "RIVN",
+      "sector": "auto",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.0948,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 sent_roll10",
+        "\u2191 post volume",
+        "\u2191 vol_20"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "SHOP",
+      "sector": "software",
+      "pred_up": false,
+      "p_up": 0.104,
+      "confidence": 0.896,
+      "sent_mean": 0.4273,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 sent_roll10",
+        "\u2191 sent_roll5"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "SMCI",
+      "sector": "semis",
+      "pred_up": false,
+      "p_up": 0.104,
+      "confidence": 0.896,
+      "sent_mean": 0.1978,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 sent_roll5",
+        "\u2191 vol_20"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "SOFI",
+      "sector": "fintech",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.0288,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 sent_roll10",
+        "\u2191 sent_roll5",
+        "\u2193 sent_surprise"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "SPY",
+      "sector": "etf",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.0824,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2193 sent_surprise",
+        "\u2191 bearish share"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "TSLA",
+      "sector": "auto",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.0888,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 sent_surprise",
+        "\u2191 bearish share"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "UBER",
+      "sector": "tech",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": -0.0261,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 bearish share",
+        "\u2193 sent_roll10"
+      ],
+      "actual_up": null,
+      "correct": null,
+      "realized_ret": null
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "WMT",
+      "sector": "consumer",
+      "pred_up": true,
+      "p_up": 0.118,
+      "confidence": 0.882,
+      "sent_mean": 0.3506,
+      "earnings_day": 0,
+      "why": [
+        "\u2191 post volume",
+        "\u2191 sent_surprise",
+        "\u2191 sentiment"
+      ],
       "actual_up": null,
       "correct": null,
       "realized_ret": null
     }
   ],
-  "updated_at": "2026-07-14T23:31:01.563106+00:00",
+  "updated_at": "2026-07-15T23:29:39.251813+00:00",
   "data_mode": "live"
 }
