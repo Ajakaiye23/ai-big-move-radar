@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-07-17",
-  "universe_sentiment": -0.1837,
+  "as_of": "2026-07-20",
+  "universe_sentiment": 0.0693,
   "top_bullish": [
-    "CSCO",
-    "ABNB",
-    "MSTR"
+    "SMCI",
+    "ARM",
+    "AMC"
   ],
   "top_bearish": [
-    "AMC",
-    "SMCI",
-    "RIVN"
+    "SOFI",
+    "RIVN",
+    "LCID"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
-    "tech": 1.0,
+    "tech": 0.833,
     "consumer": 1.0,
     "software": 1.0,
     "meme": 1.0,
@@ -23,7 +23,7 @@
     "media": 1.0,
     "fintech": 1.0,
     "financials": 1.0,
-    "auto": 1.0,
+    "auto": 0.75,
     "etf": 1.0
   }
 }
