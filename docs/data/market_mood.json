@@ -1,29 +1,29 @@
 {
-  "as_of": "2026-07-23",
-  "universe_sentiment": 0.0713,
+  "as_of": "2026-07-27",
+  "universe_sentiment": -0.0032,
   "top_bullish": [
-    "SOFI",
-    "ADBE",
-    "NIO"
+    "NIO",
+    "LCID",
+    "RIVN"
   ],
   "top_bearish": [
     "GME",
-    "RIVN",
-    "COST"
+    "ARM",
+    "NFLX"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
-    "tech": 1.0,
+    "tech": 0.833,
     "consumer": 1.0,
-    "software": 1.0,
-    "meme": 1.0,
+    "software": 0.8,
+    "meme": 0.5,
     "semis": 1.0,
     "industrial": 1.0,
     "crypto": 1.0,
-    "media": 1.0,
-    "fintech": 0.667,
+    "media": 0.5,
+    "fintech": 0.333,
     "financials": 1.0,
-    "auto": 1.0,
+    "auto": 0.75,
     "etf": 1.0
   }
 }
