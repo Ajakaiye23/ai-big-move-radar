@@ -1,28 +1,28 @@
 {
-  "as_of": "2026-07-28",
-  "universe_sentiment": -0.0531,
+  "as_of": "2026-07-29",
+  "universe_sentiment": 0.0318,
   "top_bullish": [
-    "DIS",
-    "GME",
-    "NIO"
+    "MRVL",
+    "ARM",
+    "GME"
   ],
   "top_bearish": [
-    "ARM",
-    "RIVN",
-    "SMCI"
+    "LCID",
+    "AMC",
+    "ABNB"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
-    "tech": 0.5,
+    "tech": 1.0,
     "consumer": 1.0,
     "software": 0.6,
-    "meme": 1.0,
+    "meme": 0.5,
     "semis": 1.0,
     "industrial": 1.0,
-    "crypto": 0.0,
+    "crypto": 0.5,
     "media": 1.0,
     "fintech": 0.667,
-    "financials": 0.0,
+    "financials": 1.0,
     "auto": 0.75,
     "etf": 1.0
   }
