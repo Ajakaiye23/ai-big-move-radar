@@ -1,29 +1,29 @@
 {
-  "as_of": "2026-08-12",
-  "universe_sentiment": 0.1552,
+  "as_of": "2026-08-13",
+  "universe_sentiment": 0.0666,
   "top_bullish": [
-    "LCID",
-    "MSTR",
-    "ADBE"
+    "PYPL",
+    "NFLX",
+    "ABNB"
   ],
   "top_bearish": [
-    "DIS",
-    "AMC",
-    "NFLX"
+    "GME",
+    "RIVN",
+    "AMC"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
-    "tech": 0.833,
-    "consumer": 1.0,
-    "software": 0.4,
-    "meme": 0.5,
-    "semis": 0.778,
-    "industrial": 1.0,
-    "crypto": 1.0,
-    "media": 1.0,
-    "fintech": 1.0,
+    "tech": 0.333,
+    "consumer": 0.25,
+    "software": 0.2,
+    "meme": 0.0,
+    "semis": 0.111,
+    "industrial": 0.0,
+    "crypto": 0.5,
+    "media": 0.5,
+    "fintech": 0.333,
     "financials": 1.0,
-    "auto": 0.5,
-    "etf": 1.0
+    "auto": 0.25,
+    "etf": 0.5
   }
 }
