@@ -1,0 +1,21 @@
+{
+  "name": "Chip Ledger — home game bookkeeping",
+  "short_name": "Chip Ledger",
+  "description": "Buy-ins, chip values, per-round results and one-tap settle-up for your home poker game.",
+  "start_url": "/dashboard",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#06120d",
+  "theme_color": "#06120d",
+  "categories": ["finance", "games", "utilities"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "New game", "url": "/dashboard?new=1" },
+    { "name": "Join a game", "url": "/dashboard?join=1" }
+  ]
+}
