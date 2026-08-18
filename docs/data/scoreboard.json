@@ -2,270 +2,270 @@
   "best": [
     {
       "ticker": "MU",
-      "hit_rate": 0.65,
-      "n": 60
+      "hit_rate": 0.6557,
+      "n": 61
     },
     {
       "ticker": "AMC",
-      "hit_rate": 0.5833,
-      "n": 60
+      "hit_rate": 0.5902,
+      "n": 61
     },
     {
       "ticker": "SMCI",
-      "hit_rate": 0.5833,
-      "n": 60
+      "hit_rate": 0.5902,
+      "n": 61
     },
     {
       "ticker": "AMD",
-      "hit_rate": 0.5667,
-      "n": 60
+      "hit_rate": 0.5738,
+      "n": 61
     },
     {
       "ticker": "MRVL",
-      "hit_rate": 0.5667,
-      "n": 60
+      "hit_rate": 0.5738,
+      "n": 61
     }
   ],
   "worst": [
     {
       "ticker": "NFLX",
-      "hit_rate": 0.2,
-      "n": 60
+      "hit_rate": 0.2131,
+      "n": 61
     },
     {
       "ticker": "COST",
-      "hit_rate": 0.1833,
-      "n": 60
-    },
-    {
-      "ticker": "DIS",
-      "hit_rate": 0.1833,
-      "n": 60
+      "hit_rate": 0.1967,
+      "n": 61
     },
     {
       "ticker": "QQQ",
-      "hit_rate": 0.1833,
-      "n": 60
+      "hit_rate": 0.1967,
+      "n": 61
+    },
+    {
+      "ticker": "DIS",
+      "hit_rate": 0.1803,
+      "n": 61
     },
     {
       "ticker": "JPM",
-      "hit_rate": 0.1667,
-      "n": 60
+      "hit_rate": 0.1803,
+      "n": 61
     }
   ],
   "streaks": {
-    "AAPL": 0,
-    "ABNB": 1,
-    "ADBE": 2,
-    "AMC": 2,
-    "AMD": 2,
-    "AMZN": 1,
-    "ARM": 1,
-    "AVGO": 0,
-    "BA": 1,
-    "COIN": 1,
-    "COST": 0,
-    "CRM": 0,
-    "CSCO": 2,
-    "DIS": 1,
-    "GME": 1,
-    "GOOGL": 2,
-    "HOOD": 1,
-    "INTC": 1,
-    "JPM": 0,
-    "LCID": 2,
-    "META": 1,
-    "MRVL": 1,
-    "MSFT": 1,
-    "MSTR": 0,
-    "MU": 2,
-    "NFLX": 0,
-    "NIO": 0,
-    "NVDA": 1,
-    "ORCL": 1,
-    "PLTR": 5,
-    "PYPL": 1,
-    "QCOM": 0,
-    "QQQ": 0,
-    "RIVN": 3,
-    "SHOP": 2,
-    "SMCI": 1,
-    "SOFI": 0,
-    "SPY": 1,
-    "TSLA": 1,
-    "UBER": 0,
-    "WMT": 1
+    "AAPL": 1,
+    "ABNB": 2,
+    "ADBE": 3,
+    "AMC": 3,
+    "AMD": 3,
+    "AMZN": 2,
+    "ARM": 2,
+    "AVGO": 1,
+    "BA": 2,
+    "COIN": 2,
+    "COST": 1,
+    "CRM": 1,
+    "CSCO": 3,
+    "DIS": 0,
+    "GME": 2,
+    "GOOGL": 3,
+    "HOOD": 2,
+    "INTC": 2,
+    "JPM": 1,
+    "LCID": 3,
+    "META": 2,
+    "MRVL": 2,
+    "MSFT": 2,
+    "MSTR": 1,
+    "MU": 3,
+    "NFLX": 1,
+    "NIO": 1,
+    "NVDA": 2,
+    "ORCL": 2,
+    "PLTR": 6,
+    "PYPL": 2,
+    "QCOM": 1,
+    "QQQ": 1,
+    "RIVN": 4,
+    "SHOP": 3,
+    "SMCI": 2,
+    "SOFI": 1,
+    "SPY": 2,
+    "TSLA": 2,
+    "UBER": 1,
+    "WMT": 2
   },
   "top_streak": {
     "ticker": "PLTR",
-    "len": 5
+    "len": 6
   },
   "aggregate_hit_rate": 0.1524,
   "n_reconciled": 1778,
   "per_ticker": {
     "AAPL": {
-      "hit_rate": 0.2,
-      "n": 60
+      "hit_rate": 0.2131,
+      "n": 61
     },
     "ABNB": {
-      "hit_rate": 0.2333,
-      "n": 60
+      "hit_rate": 0.2459,
+      "n": 61
     },
     "ADBE": {
-      "hit_rate": 0.35,
-      "n": 60
+      "hit_rate": 0.3607,
+      "n": 61
     },
     "AMC": {
-      "hit_rate": 0.5833,
-      "n": 60
+      "hit_rate": 0.5902,
+      "n": 61
     },
     "AMD": {
-      "hit_rate": 0.5667,
-      "n": 60
+      "hit_rate": 0.5738,
+      "n": 61
     },
     "AMZN": {
-      "hit_rate": 0.3167,
-      "n": 60
+      "hit_rate": 0.3279,
+      "n": 61
     },
     "ARM": {
-      "hit_rate": 0.5167,
-      "n": 60
+      "hit_rate": 0.5246,
+      "n": 61
     },
     "AVGO": {
-      "hit_rate": 0.35,
-      "n": 60
+      "hit_rate": 0.3607,
+      "n": 61
     },
     "BA": {
-      "hit_rate": 0.25,
-      "n": 60
+      "hit_rate": 0.2623,
+      "n": 61
     },
     "COIN": {
-      "hit_rate": 0.55,
-      "n": 60
+      "hit_rate": 0.5574,
+      "n": 61
     },
     "COST": {
-      "hit_rate": 0.1833,
-      "n": 60
+      "hit_rate": 0.1967,
+      "n": 61
     },
     "CRM": {
-      "hit_rate": 0.2833,
-      "n": 60
+      "hit_rate": 0.2951,
+      "n": 61
     },
     "CSCO": {
-      "hit_rate": 0.3,
-      "n": 60
+      "hit_rate": 0.3115,
+      "n": 61
     },
     "DIS": {
-      "hit_rate": 0.1833,
-      "n": 60
+      "hit_rate": 0.1803,
+      "n": 61
     },
     "GME": {
-      "hit_rate": 0.2333,
-      "n": 60
+      "hit_rate": 0.2459,
+      "n": 61
     },
     "GOOGL": {
-      "hit_rate": 0.3,
-      "n": 60
+      "hit_rate": 0.3115,
+      "n": 61
     },
     "HOOD": {
-      "hit_rate": 0.4167,
-      "n": 60
+      "hit_rate": 0.4262,
+      "n": 61
     },
     "INTC": {
-      "hit_rate": 0.4833,
-      "n": 60
+      "hit_rate": 0.4918,
+      "n": 61
     },
     "JPM": {
-      "hit_rate": 0.1667,
-      "n": 60
+      "hit_rate": 0.1803,
+      "n": 61
     },
     "LCID": {
-      "hit_rate": 0.5333,
-      "n": 60
+      "hit_rate": 0.541,
+      "n": 61
     },
     "META": {
-      "hit_rate": 0.3333,
-      "n": 60
+      "hit_rate": 0.3443,
+      "n": 61
     },
     "MRVL": {
-      "hit_rate": 0.5667,
-      "n": 60
+      "hit_rate": 0.5738,
+      "n": 61
     },
     "MSFT": {
-      "hit_rate": 0.2167,
-      "n": 60
+      "hit_rate": 0.2295,
+      "n": 61
     },
     "MSTR": {
-      "hit_rate": 0.3833,
-      "n": 60
+      "hit_rate": 0.3934,
+      "n": 61
     },
     "MU": {
-      "hit_rate": 0.65,
-      "n": 60
+      "hit_rate": 0.6557,
+      "n": 61
     },
     "NFLX": {
-      "hit_rate": 0.2,
-      "n": 60
+      "hit_rate": 0.2131,
+      "n": 61
     },
     "NIO": {
-      "hit_rate": 0.3,
-      "n": 60
+      "hit_rate": 0.3115,
+      "n": 61
     },
     "NVDA": {
-      "hit_rate": 0.2333,
-      "n": 60
+      "hit_rate": 0.2459,
+      "n": 61
     },
     "ORCL": {
-      "hit_rate": 0.2833,
-      "n": 60
+      "hit_rate": 0.2951,
+      "n": 61
     },
     "PLTR": {
-      "hit_rate": 0.45,
-      "n": 60
+      "hit_rate": 0.459,
+      "n": 61
     },
     "PYPL": {
-      "hit_rate": 0.35,
-      "n": 60
+      "hit_rate": 0.3607,
+      "n": 61
     },
     "QCOM": {
-      "hit_rate": 0.4333,
-      "n": 60
+      "hit_rate": 0.4426,
+      "n": 61
     },
     "QQQ": {
-      "hit_rate": 0.1833,
-      "n": 60
+      "hit_rate": 0.1967,
+      "n": 61
     },
     "RIVN": {
-      "hit_rate": 0.5667,
-      "n": 60
+      "hit_rate": 0.5738,
+      "n": 61
     },
     "SHOP": {
-      "hit_rate": 0.5,
-      "n": 60
+      "hit_rate": 0.5082,
+      "n": 61
     },
     "SMCI": {
-      "hit_rate": 0.5833,
-      "n": 60
+      "hit_rate": 0.5902,
+      "n": 61
     },
     "SOFI": {
-      "hit_rate": 0.2667,
-      "n": 60
+      "hit_rate": 0.2787,
+      "n": 61
     },
     "SPY": {
-      "hit_rate": 0.25,
-      "n": 60
+      "hit_rate": 0.2623,
+      "n": 61
     },
     "TSLA": {
-      "hit_rate": 0.4333,
-      "n": 60
+      "hit_rate": 0.4426,
+      "n": 61
     },
     "UBER": {
-      "hit_rate": 0.3167,
-      "n": 60
+      "hit_rate": 0.3279,
+      "n": 61
     },
     "WMT": {
-      "hit_rate": 0.2333,
-      "n": 60
+      "hit_rate": 0.2459,
+      "n": 61
     }
   }
 }
