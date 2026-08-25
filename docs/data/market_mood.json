@@ -1,27 +1,27 @@
 {
-  "as_of": "2026-08-21",
-  "universe_sentiment": 0.1245,
+  "as_of": "2026-08-24",
+  "universe_sentiment": 0.0612,
   "top_bullish": [
-    "GME",
-    "SHOP",
-    "ARM"
+    "COST",
+    "QQQ",
+    "QCOM"
   ],
   "top_bearish": [
-    "UBER",
-    "AMC",
+    "LCID",
+    "SHOP",
     "RIVN"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
     "tech": 0.667,
     "consumer": 0.5,
-    "software": 0.2,
-    "meme": 0.0,
-    "semis": 0.667,
-    "industrial": 0.0,
-    "crypto": 0.5,
-    "media": 0.5,
-    "fintech": 0.333,
+    "software": 0.4,
+    "meme": 0.5,
+    "semis": 0.889,
+    "industrial": 1.0,
+    "crypto": 1.0,
+    "media": 1.0,
+    "fintech": 0.667,
     "financials": 1.0,
     "auto": 1.0,
     "etf": 1.0
