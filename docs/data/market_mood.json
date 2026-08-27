@@ -1,23 +1,23 @@
 {
-  "as_of": "2026-08-24",
-  "universe_sentiment": 0.0612,
+  "as_of": "2026-08-26",
+  "universe_sentiment": 0.0075,
   "top_bullish": [
-    "COST",
-    "QQQ",
-    "QCOM"
+    "ADBE",
+    "HOOD",
+    "WMT"
   ],
   "top_bearish": [
-    "LCID",
-    "SHOP",
-    "RIVN"
+    "RIVN",
+    "SOFI",
+    "ARM"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
     "tech": 0.667,
     "consumer": 0.5,
-    "software": 0.4,
-    "meme": 0.5,
-    "semis": 0.889,
+    "software": 0.6,
+    "meme": 1.0,
+    "semis": 0.333,
     "industrial": 1.0,
     "crypto": 1.0,
     "media": 1.0,
