@@ -1,29 +1,29 @@
 {
-  "as_of": "2026-08-27",
-  "universe_sentiment": 0.2338,
+  "as_of": "2026-08-28",
+  "universe_sentiment": -0.0436,
   "top_bullish": [
-    "ABNB",
-    "PLTR",
-    "HOOD"
+    "ORCL",
+    "NIO",
+    "GME"
   ],
   "top_bearish": [
-    "GME",
-    "COST",
-    "JPM"
+    "SMCI",
+    "UBER",
+    "ABNB"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
-    "tech": 0.833,
-    "consumer": 1.0,
-    "software": 0.4,
-    "meme": 1.0,
-    "semis": 0.222,
-    "industrial": 1.0,
+    "tech": 0.0,
+    "consumer": 0.25,
+    "software": 0.0,
+    "meme": 0.0,
+    "semis": 0.0,
+    "industrial": 0.0,
     "crypto": 0.0,
-    "media": 1.0,
-    "fintech": 1.0,
-    "financials": 1.0,
-    "auto": 0.75,
-    "etf": 1.0
+    "media": 0.0,
+    "fintech": 0.0,
+    "financials": 0.0,
+    "auto": 0.25,
+    "etf": 0.0
   }
 }
