@@ -1,15 +1,15 @@
 {
   "as_of": "2026-08-31",
-  "universe_sentiment": -0.0235,
+  "universe_sentiment": 0.0385,
   "top_bullish": [
-    "ABNB",
-    "GME",
-    "NIO"
+    "HOOD",
+    "LCID",
+    "GME"
   ],
   "top_bearish": [
-    "NFLX",
     "AMC",
-    "ARM"
+    "ABNB",
+    "SOFI"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
