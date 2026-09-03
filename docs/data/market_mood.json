@@ -1,25 +1,25 @@
 {
-  "as_of": "2026-08-31",
-  "universe_sentiment": 0.0385,
+  "as_of": "2026-09-01",
+  "universe_sentiment": 0.0319,
   "top_bullish": [
-    "HOOD",
+    "RIVN",
     "LCID",
-    "GME"
+    "SOFI"
   ],
   "top_bearish": [
     "AMC",
-    "ABNB",
-    "SOFI"
+    "ARM",
+    "SHOP"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
-    "tech": 1.0,
-    "consumer": 1.0,
-    "software": 0.6,
-    "meme": 0.5,
-    "semis": 0.444,
+    "tech": 0.833,
+    "consumer": 0.75,
+    "software": 0.8,
+    "meme": 1.0,
+    "semis": 1.0,
     "industrial": 1.0,
-    "crypto": 0.0,
+    "crypto": 1.0,
     "media": 1.0,
     "fintech": 1.0,
     "financials": 1.0,
