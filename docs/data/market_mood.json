@@ -1,29 +1,29 @@
 {
-  "as_of": "2026-09-03",
-  "universe_sentiment": 0.0052,
+  "as_of": "2026-09-04",
+  "universe_sentiment": 0.0279,
   "top_bullish": [
-    "ORCL",
-    "NIO",
-    "LCID"
+    "ABNB",
+    "PYPL",
+    "SOFI"
   ],
   "top_bearish": [
-    "PYPL",
+    "NIO",
     "AMC",
-    "CSCO"
+    "QCOM"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
-    "tech": 0.167,
-    "consumer": 0.0,
-    "software": 0.0,
-    "meme": 0.5,
-    "semis": 0.0,
-    "industrial": 0.0,
+    "tech": 0.833,
+    "consumer": 0.75,
+    "software": 0.6,
+    "meme": 1.0,
+    "semis": 0.889,
+    "industrial": 1.0,
     "crypto": 0.0,
-    "media": 0.0,
-    "fintech": 0.0,
-    "financials": 0.0,
-    "auto": 0.25,
-    "etf": 0.0
+    "media": 1.0,
+    "fintech": 0.333,
+    "financials": 1.0,
+    "auto": 1.0,
+    "etf": 1.0
   }
 }
