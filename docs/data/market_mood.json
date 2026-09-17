@@ -1,29 +1,29 @@
 {
-  "as_of": "2026-09-14",
-  "universe_sentiment": 0.016,
+  "as_of": "2026-09-15",
+  "universe_sentiment": 0.0101,
   "top_bullish": [
-    "WMT",
-    "MU",
+    "NIO",
+    "UBER",
     "ABNB"
   ],
   "top_bearish": [
-    "MRVL",
-    "RIVN",
-    "SMCI"
+    "MSTR",
+    "COIN",
+    "HOOD"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
-    "tech": 0.833,
+    "tech": 1.0,
     "consumer": 1.0,
-    "software": 0.4,
+    "software": 0.2,
     "meme": 0.5,
-    "semis": 0.889,
+    "semis": 1.0,
     "industrial": 1.0,
     "crypto": 0.5,
     "media": 1.0,
-    "fintech": 0.0,
+    "fintech": 0.667,
     "financials": 1.0,
-    "auto": 0.5,
+    "auto": 1.0,
     "etf": 1.0
   }
 }
