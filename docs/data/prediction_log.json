@@ -62744,9 +62744,9 @@
         "\u2191 sent_surprise",
         "\u2191 market return"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.00227
     },
     {
       "date": "2026-09-21",
@@ -62780,9 +62780,9 @@
         "\u2191 bearish share",
         "\u2191 market return"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": -0.04517
     },
     {
       "date": "2026-09-21",
@@ -62798,9 +62798,9 @@
         "\u2191 volume_vs_ma",
         "\u2191 ret_5"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.02768
     },
     {
       "date": "2026-09-21",
@@ -62816,9 +62816,9 @@
         "\u2191 sent_surprise",
         "\u2191 ret_3"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.0134
     },
     {
       "date": "2026-09-21",
@@ -62834,9 +62834,9 @@
         "\u2191 sent_surprise",
         "\u2191 sentiment momentum"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.01343
     },
     {
       "date": "2026-09-21",
@@ -62852,9 +62852,9 @@
         "\u2191 ret_3",
         "\u2191 volume_vs_ma"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.0319
     },
     {
       "date": "2026-09-21",
@@ -62870,9 +62870,9 @@
         "\u2191 sent_surprise",
         "\u2191 bearish share"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.00518
     },
     {
       "date": "2026-09-21",
@@ -62888,9 +62888,9 @@
         "\u2191 bearish share",
         "\u2191 market return"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.01705
     },
     {
       "date": "2026-09-21",
@@ -62906,9 +62906,9 @@
         "\u2191 ret_3",
         "\u2191 sent_surprise"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.0001
     },
     {
       "date": "2026-09-21",
@@ -62960,9 +62960,9 @@
         "\u2191 sent_roll5",
         "\u2191 sent_roll10"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 1,
+      "correct": 1,
+      "realized_ret": -0.04504
     },
     {
       "date": "2026-09-21",
@@ -62996,9 +62996,9 @@
         "\u2191 market return",
         "\u2191 ma20_ratio"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 1,
+      "correct": 1,
+      "realized_ret": 0.0558
     },
     {
       "date": "2026-09-21",
@@ -63014,9 +63014,9 @@
         "\u2191 sent_surprise",
         "\u2191 market return"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": -0.01073
     },
     {
       "date": "2026-09-21",
@@ -63032,9 +63032,9 @@
         "\u2191 ret_3",
         "\u2191 sent_surprise"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.0077
     },
     {
       "date": "2026-09-21",
@@ -63050,9 +63050,9 @@
         "\u2191 sent_surprise",
         "\u2191 ret_3"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.01708
     },
     {
       "date": "2026-09-21",
@@ -63068,9 +63068,9 @@
         "\u2191 bearish share",
         "\u2191 market return"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 1,
+      "correct": 0,
+      "realized_ret": -0.0342
     },
     {
       "date": "2026-09-21",
@@ -63086,9 +63086,9 @@
         "\u2191 sent_roll5",
         "\u2191 bearish share"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.00465
     },
     {
       "date": "2026-09-21",
@@ -63104,9 +63104,9 @@
         "\u2191 sent_surprise",
         "\u2191 MACD"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": -0.00627
     },
     {
       "date": "2026-09-21",
@@ -63122,9 +63122,9 @@
         "\u2191 sent_roll10",
         "\u2191 ret_5"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.01935
     },
     {
       "date": "2026-09-21",
@@ -63140,9 +63140,9 @@
         "\u2191 sent_surprise",
         "\u2191 market return"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": -0.0072
     },
     {
       "date": "2026-09-21",
@@ -63158,9 +63158,9 @@
         "\u2191 ret_3",
         "\u2191 ret_2"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": -0.00694
     },
     {
       "date": "2026-09-21",
@@ -63176,9 +63176,9 @@
         "\u2191 sent_surprise",
         "\u2191 MACD"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.05
     },
     {
       "date": "2026-09-21",
@@ -63194,9 +63194,9 @@
         "\u2191 bearish share",
         "\u2193 sent_surprise"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.01636
     },
     {
       "date": "2026-09-21",
@@ -63212,9 +63212,9 @@
         "\u2191 market return",
         "\u2193 sent_roll5"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.01362
     },
     {
       "date": "2026-09-21",
@@ -63230,9 +63230,9 @@
         "\u2193 dow",
         "\u2193 VIX"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.00655
     },
     {
       "date": "2026-09-21",
@@ -63248,9 +63248,9 @@
         "\u2191 bearish share",
         "\u2191 market return"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.00431
     },
     {
       "date": "2026-09-21",
@@ -63266,9 +63266,9 @@
         "\u2191 sent_surprise",
         "\u2191 sent_roll10"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.01038
     },
     {
       "date": "2026-09-21",
@@ -63284,9 +63284,9 @@
         "\u2191 bearish share",
         "\u2191 sent_roll10"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.00513
     },
     {
       "date": "2026-09-21",
@@ -63302,9 +63302,9 @@
         "\u2191 sent_surprise",
         "\u2191 sent_roll10"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.0208
     },
     {
       "date": "2026-09-21",
@@ -63320,9 +63320,9 @@
         "\u2191 market return",
         "\u2191 bearish share"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.00808
     },
     {
       "date": "2026-09-21",
@@ -63338,9 +63338,9 @@
         "\u2193 dow",
         "\u2193 VIX"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": -0.01432
     },
     {
       "date": "2026-09-21",
@@ -63356,9 +63356,9 @@
         "\u2191 volume_vs_ma",
         "\u2191 bearish share"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 1,
+      "correct": 1,
+      "realized_ret": 0.0712
     },
     {
       "date": "2026-09-21",
@@ -63374,9 +63374,9 @@
         "\u2191 sent_surprise",
         "\u2191 sent_roll10"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.00825
     },
     {
       "date": "2026-09-21",
@@ -63392,9 +63392,9 @@
         "\u2191 bearish share",
         "\u2191 volume_vs_ma"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.0112
     },
     {
       "date": "2026-09-21",
@@ -63410,9 +63410,9 @@
         "\u2191 bearish share",
         "\u2191 sent_surprise"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": -0.00016
     },
     {
       "date": "2026-09-21",
@@ -63428,9 +63428,9 @@
         "\u2191 market return",
         "\u2191 bearish share"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": 0.00959
     },
     {
       "date": "2026-09-21",
@@ -63446,9 +63446,9 @@
         "\u2191 sent_roll5",
         "\u2191 sent_roll10"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 1,
+      "realized_ret": -0.01341
     },
     {
       "date": "2026-09-21",
@@ -63464,11 +63464,11 @@
         "\u2191 bearish share",
         "\u2191 market return"
       ],
-      "actual_up": null,
-      "correct": null,
-      "realized_ret": null
+      "actual_up": 0,
+      "correct": 0,
+      "realized_ret": 0.02494
     }
   ],
-  "updated_at": "2026-09-23T00:30:25.470994+00:00",
+  "updated_at": "2026-09-24T00:45:21.811135+00:00",
   "data_mode": "live"
 }

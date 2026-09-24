@@ -2,9 +2,9 @@
   "as_of": "2026-09-21",
   "data_mode": "live",
   "target_type": "big_move",
-  "aggregate_hit_rate": 0.1333,
-  "n_reconciled": 2439,
-  "baseline": 0.1188,
+  "aggregate_hit_rate": 0.1339,
+  "n_reconciled": 2450,
+  "baseline": 0.1187,
   "market_context": {
     "vix": 14.9,
     "regime": "calm"
@@ -76,16 +76,16 @@
         0.5341,
         0.1656
       ],
-      "hit_rate": 0.5529,
-      "n_predictions": 85,
+      "hit_rate": 0.5465,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 volume_vs_ma",
         "\u2191 ret_5"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0707,
-      "earnings_in": 41,
+      "expected_move": 0.0714,
+      "earnings_in": 40,
       "earnings_date": "2026-11-03"
     },
     {
@@ -151,19 +151,19 @@
         0.0,
         0.0,
         0.0,
-        -0.2812,
-        0.1348
+        0.0,
+        0.2307
       ],
-      "hit_rate": 0.3294,
-      "n_predictions": 85,
+      "hit_rate": 0.3256,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 sent_surprise",
         "\u2191 sentiment momentum"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0132,
-      "earnings_in": 35,
+      "expected_move": 0.0196,
+      "earnings_in": 34,
       "earnings_date": "2026-10-28"
     },
     {
@@ -219,29 +219,29 @@
         0.0,
         0.0,
         0.0,
-        -0.9091,
-        -0.088,
-        -0.171,
+        0.0,
+        0.0,
+        -0.2374,
         -0.2951,
         -0.1087,
-        -0.0626,
+        -0.0548,
         0.2402,
         -0.0376,
-        -0.1921,
+        -0.1994,
         -0.1491,
         0.094,
         0.0201
       ],
-      "hit_rate": 0.2706,
-      "n_predictions": 85,
+      "hit_rate": 0.2674,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 bearish share",
         "\u2191 market return"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0242,
-      "earnings_in": 34,
+      "expected_move": 0.0222,
+      "earnings_in": 33,
       "earnings_date": "2026-10-27"
     },
     {
@@ -295,31 +295,31 @@
         0.0,
         0.0,
         0.0,
-        0.2191,
-        0.3091,
+        0.0,
+        0.3929,
         -0.1516,
         0.1808,
         0.09,
         0.2567,
         0.058,
-        0.0793,
+        0.0733,
         0.1345,
-        0.3749,
+        0.4112,
         0.4162,
         0.5002,
         0.1647,
         0.2639
       ],
-      "hit_rate": 0.3059,
-      "n_predictions": 85,
+      "hit_rate": 0.314,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 sent_roll5",
         "\u2191 sent_roll10"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0252,
-      "earnings_in": 48,
+      "expected_move": 0.0196,
+      "earnings_in": 47,
       "earnings_date": "2026-11-10"
     },
     {
@@ -370,34 +370,34 @@
         0.0,
         0.0,
         0.0,
+        -0.4544,
+        -0.9645,
+        0.0951,
+        -0.3159,
+        0.1012,
+        -0.0525,
+        -0.2784,
+        -0.0164,
+        0.2949,
+        0.1325,
+        0.027,
+        0.0035,
+        0.2115,
+        0.1148,
         0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
+        0.2568,
+        0.3493
       ],
-      "hit_rate": 0.2588,
-      "n_predictions": 85,
+      "hit_rate": 0.2674,
+      "n_predictions": 86,
       "why": [
         "\u2191 sentiment momentum",
         "\u2191 market return",
         "\u2191 ma20_ratio"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0476,
-      "earnings_in": 75,
+      "expected_move": 0.0372,
+      "earnings_in": 74,
       "earnings_date": "2026-12-07"
     },
     {
@@ -452,10 +452,10 @@
         0.0,
         0.0,
         0.0,
-        -0.1321,
-        -0.0016,
-        0.2362,
-        -0.1243,
+        0.0,
+        0.0,
+        0.0,
+        0.0086,
         -0.0778,
         -0.1528,
         -0.027,
@@ -466,16 +466,16 @@
         -0.4907,
         -0.1932
       ],
-      "hit_rate": 0.2,
-      "n_predictions": 85,
+      "hit_rate": 0.1977,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 bearish share",
         "\u2193 sent_surprise"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0237,
-      "earnings_in": 27,
+      "expected_move": 0.0195,
+      "earnings_in": 26,
       "earnings_date": "2026-10-20"
     },
     {
@@ -538,21 +538,21 @@
         0.0,
         0.0,
         0.0,
-        0.3584,
-        -0.0999,
+        0.0,
+        -0.0671,
         0.1654,
         -0.0775,
-        0.0569
+        0.047
       ],
-      "hit_rate": 0.2,
-      "n_predictions": 85,
+      "hit_rate": 0.1977,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 market return",
         "\u2191 bearish share"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0085
+      "expected_move": 0.0075
     },
     {
       "ticker": "SHOP",
@@ -620,17 +620,17 @@
         0.0518,
         0.2219
       ],
-      "hit_rate": 0.5765,
-      "n_predictions": 85,
+      "hit_rate": 0.5814,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 volume_vs_ma",
         "\u2191 bearish share"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0449,
-      "earnings_in": 40,
-      "earnings_date": "2026-11-02"
+      "expected_move": 0.0392,
+      "earnings_in": 28,
+      "earnings_date": "2026-10-22"
     },
     {
       "ticker": "SOFI",
@@ -698,16 +698,16 @@
         -0.4023,
         -0.0203
       ],
-      "hit_rate": 0.3529,
-      "n_predictions": 85,
+      "hit_rate": 0.3488,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 bearish share",
         "\u2191 volume_vs_ma"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0364,
-      "earnings_in": 33,
+      "expected_move": 0.029,
+      "earnings_in": 32,
       "earnings_date": "2026-10-26"
     },
     {
@@ -773,18 +773,18 @@
         0.0,
         0.0,
         0.0,
-        -0.2595,
-        0.0358
+        0.0,
+        0.0661
       ],
-      "hit_rate": 0.2706,
-      "n_predictions": 85,
+      "hit_rate": 0.2674,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 bearish share",
         "\u2191 sent_surprise"
       ],
       "earnings_day": 0,
-      "expected_move": 0.004
+      "expected_move": 0.0048
     },
     {
       "ticker": "WMT",
@@ -841,8 +841,8 @@
         0.0,
         0.0,
         0.0,
-        -0.0103,
-        -0.0568,
+        0.0,
+        -0.1268,
         0.0254,
         -0.1734,
         0.2504,
@@ -852,16 +852,16 @@
         0.0062,
         0.0712
       ],
-      "hit_rate": 0.2353,
-      "n_predictions": 85,
+      "hit_rate": 0.2326,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 bearish share",
         "\u2191 market return"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0195,
-      "earnings_in": 57,
+      "expected_move": 0.0156,
+      "earnings_in": 56,
       "earnings_date": "2026-11-19"
     },
     {
@@ -923,23 +923,23 @@
         0.0,
         0.0,
         0.0,
-        -0.3724,
-        -0.1768,
+        0.0,
+        -0.1759,
         0.0109,
-        0.129,
+        0.1321,
         -0.012,
         0.1703
       ],
-      "hit_rate": 0.3059,
-      "n_predictions": 85,
+      "hit_rate": 0.314,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 sent_surprise",
         "\u2191 bearish share"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0144,
-      "earnings_in": 77,
+      "expected_move": 0.0215,
+      "earnings_in": 76,
       "earnings_date": "2026-12-09"
     },
     {
@@ -987,26 +987,26 @@
       ],
       "sentiment": 0.0,
       "sentiment_spark": [
-        0.0702,
-        0.5362,
-        0.548,
-        0.2435,
-        0.3508,
-        0.2857,
-        0.4003,
-        0.0339,
-        0.3081,
-        -0.191,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.2712,
         0.2369,
         -0.5381,
         0.1312,
-        -0.0196,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
+        -0.1765,
+        0.0785,
+        -0.0413,
+        -0.078,
+        0.2909,
+        0.1557,
+        -0.0603
       ],
       "hit_rate": 0.2,
       "n_predictions": 85,
@@ -1016,8 +1016,8 @@
         "\u2193 dow"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0313,
-      "earnings_in": 1,
+      "expected_move": 0.0338,
+      "earnings_in": 0,
       "earnings_date": "2026-09-24"
     },
     {
@@ -1066,11 +1066,11 @@
       "sentiment": 0.5263,
       "sentiment_spark": [
         0.0,
-        0.0119,
-        0.1995,
+        0.0,
+        0.4357,
         0.2438,
         0.1283,
-        0.2644,
+        0.2307,
         0.2798,
         0.2224,
         0.1436,
@@ -1086,16 +1086,16 @@
         0.1887,
         0.5263
       ],
-      "hit_rate": 0.6235,
-      "n_predictions": 85,
+      "hit_rate": 0.6279,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 sent_surprise",
         "\u2191 sent_roll10"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0574,
-      "earnings_in": 40,
+      "expected_move": 0.0468,
+      "earnings_in": 39,
       "earnings_date": "2026-11-02"
     },
     {
@@ -1161,19 +1161,19 @@
         0.0,
         0.0,
         0.0,
-        0.0079,
-        0.2028
+        0.0,
+        0.2088
       ],
-      "hit_rate": 0.1882,
-      "n_predictions": 85,
+      "hit_rate": 0.1977,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 sent_surprise",
         "\u2191 market return"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0106,
-      "earnings_in": 35,
+      "expected_move": 0.0166,
+      "earnings_in": 34,
       "earnings_date": "2026-10-28"
     },
     {
@@ -1250,8 +1250,8 @@
         "\u2191 post volume"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0271,
-      "earnings_in": 42,
+      "expected_move": 0.0249,
+      "earnings_in": 41,
       "earnings_date": "2026-11-04"
     },
     {
@@ -1311,7 +1311,7 @@
         0.0,
         0.0,
         0.0,
-        0.1384,
+        -0.2179,
         0.0323,
         0.1169,
         0.4579,
@@ -1320,16 +1320,16 @@
         -0.0589,
         0.0552
       ],
-      "hit_rate": 0.3647,
-      "n_predictions": 85,
+      "hit_rate": 0.3721,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 bearish share",
         "\u2191 market return"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0316,
-      "earnings_in": 77,
+      "expected_move": 0.0248,
+      "earnings_in": 76,
       "earnings_date": "2026-12-09"
     },
     {
@@ -1395,19 +1395,19 @@
         0.0,
         0.0,
         0.0,
-        -0.0229,
-        0.3938
+        0.0,
+        0.4164
       ],
-      "hit_rate": 0.5412,
-      "n_predictions": 85,
+      "hit_rate": 0.5465,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 sent_surprise",
         "\u2191 ret_3"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0153,
-      "earnings_in": 40,
+      "expected_move": 0.0331,
+      "earnings_in": 39,
       "earnings_date": "2026-11-02"
     },
     {
@@ -1455,13 +1455,13 @@
       ],
       "sentiment": 0.6043,
       "sentiment_spark": [
-        0.5605,
-        0.3878,
-        0.5971,
-        0.8312,
-        0.7937,
-        0.4533,
-        -0.042,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1776,
         0.4291,
         -0.0227,
         0.0434,
@@ -1476,16 +1476,16 @@
         0.4092,
         0.6043
       ],
-      "hit_rate": 0.4706,
-      "n_predictions": 85,
+      "hit_rate": 0.4767,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 ret_3",
         "\u2191 volume_vs_ma"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0574,
-      "earnings_in": 42,
+      "expected_move": 0.0508,
+      "earnings_in": 41,
       "earnings_date": "2026-11-04"
     },
     {
@@ -1548,22 +1548,22 @@
         0.0,
         0.0,
         0.0,
-        -0.7468,
-        -0.4298,
+        0.0,
+        -0.3524,
         -0.0528,
         0.2478,
-        0.2275
+        0.2416
       ],
-      "hit_rate": 0.5647,
-      "n_predictions": 85,
+      "hit_rate": 0.5698,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 ret_3",
         "\u2191 sent_surprise"
       ],
       "earnings_day": 0,
-      "expected_move": 0.051,
-      "earnings_in": 35,
+      "expected_move": 0.0419,
+      "earnings_in": 34,
       "earnings_date": "2026-10-28"
     },
     {
@@ -1640,8 +1640,8 @@
         "\u2193 sent_roll10"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0197,
-      "earnings_in": 49,
+      "expected_move": 0.0182,
+      "earnings_in": 48,
       "earnings_date": "2026-11-11"
     },
     {
@@ -1708,18 +1708,18 @@
         0.0,
         0.0,
         0.0,
-        0.1393
+        0.0
       ],
-      "hit_rate": 0.2706,
-      "n_predictions": 85,
+      "hit_rate": 0.2791,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 sent_surprise",
         "\u2191 market return"
       ],
       "earnings_day": 0,
-      "expected_move": 0.015,
-      "earnings_in": 34,
+      "expected_move": 0.0219,
+      "earnings_in": 33,
       "earnings_date": "2026-10-27"
     },
     {
@@ -1778,7 +1778,7 @@
         0.0,
         0.0,
         0.0,
-        0.2239,
+        0.9212,
         -0.1796,
         -0.0539,
         0.257,
@@ -1788,16 +1788,16 @@
         0.1625,
         0.1581
       ],
-      "hit_rate": 0.4,
-      "n_predictions": 85,
+      "hit_rate": 0.407,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 ret_3",
         "\u2191 sent_surprise"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0508,
-      "earnings_in": 41,
+      "expected_move": 0.0423,
+      "earnings_in": 40,
       "earnings_date": "2026-11-03"
     },
     {
@@ -1862,21 +1862,21 @@
         0.0,
         0.0,
         0.0,
-        0.2889,
-        0.2398,
+        0.0,
+        0.2239,
         0.3656
       ],
-      "hit_rate": 0.4941,
-      "n_predictions": 85,
+      "hit_rate": 0.5,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 sent_surprise",
         "\u2191 ret_3"
       ],
       "earnings_day": 0,
-      "expected_move": 0.028,
+      "expected_move": 0.0445,
       "earnings_in": 28,
-      "earnings_date": "2026-10-21"
+      "earnings_date": "2026-10-22"
     },
     {
       "ticker": "JPM",
@@ -1936,24 +1936,24 @@
         0.0,
         0.0,
         0.0,
-        0.0029,
-        0.1404,
+        0.0,
+        0.1581,
         0.0528,
-        0.2604,
+        0.2697,
         0.1267,
         -0.024,
         0.054
       ],
-      "hit_rate": 0.1647,
-      "n_predictions": 85,
+      "hit_rate": 0.1628,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 bearish share",
         "\u2191 market return"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0193,
-      "earnings_in": 20,
+      "expected_move": 0.0156,
+      "earnings_in": 19,
       "earnings_date": "2026-10-13"
     },
     {
@@ -2022,16 +2022,16 @@
         0.4642,
         0.1338
       ],
-      "hit_rate": 0.4588,
-      "n_predictions": 85,
+      "hit_rate": 0.4651,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 sent_roll5",
         "\u2191 bearish share"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0741,
-      "earnings_in": 41,
+      "expected_move": 0.0565,
+      "earnings_in": 40,
       "earnings_date": "2026-11-03"
     },
     {
@@ -2098,18 +2098,18 @@
         0.0,
         0.0,
         0.0,
-        0.3695
+        0.0
       ],
-      "hit_rate": 0.3294,
-      "n_predictions": 85,
+      "hit_rate": 0.3372,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 sent_surprise",
         "\u2191 MACD"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0241,
-      "earnings_in": 34,
+      "expected_move": 0.042,
+      "earnings_in": 33,
       "earnings_date": "2026-10-27"
     },
     {
@@ -2168,8 +2168,8 @@
         0.0,
         0.0,
         0.0,
-        0.0669,
-        0.4086,
+        0.0,
+        0.3895,
         0.5115,
         -0.2944,
         -0.2799,
@@ -2178,16 +2178,16 @@
         0.4911,
         0.2742
       ],
-      "hit_rate": 0.5412,
-      "n_predictions": 85,
+      "hit_rate": 0.5465,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 sent_roll10",
         "\u2191 ret_5"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0546,
-      "earnings_in": 68,
+      "expected_move": 0.0428,
+      "earnings_in": 67,
       "earnings_date": "2026-11-30"
     },
     {
@@ -2253,19 +2253,19 @@
         0.0,
         0.0,
         0.0,
-        0.0787,
-        0.2521
+        0.0,
+        0.1039
       ],
-      "hit_rate": 0.2941,
-      "n_predictions": 85,
+      "hit_rate": 0.3023,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 sent_surprise",
         "\u2191 market return"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0112,
-      "earnings_in": 34,
+      "expected_move": 0.0178,
+      "earnings_in": 33,
       "earnings_date": "2026-10-27"
     },
     {
@@ -2313,6 +2313,13 @@
       ],
       "sentiment": 0.3125,
       "sentiment_spark": [
+        -0.0157,
+        0.5412,
+        -0.6102,
+        -0.1106,
+        -0.2146,
+        0.1422,
+        0.2493,
         0.0,
         0.0,
         0.0,
@@ -2322,28 +2329,21 @@
         0.0,
         0.0,
         0.0,
-        0.3164,
-        -0.115,
-        0.09,
-        -0.1587,
-        -0.1605,
-        -0.2084,
-        -0.4131,
-        -0.5529,
-        -0.1504,
-        0.176,
-        0.3125
+        0.0,
+        0.0,
+        0.0,
+        0.0
       ],
-      "hit_rate": 0.4353,
-      "n_predictions": 85,
+      "hit_rate": 0.4419,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 ret_3",
         "\u2191 ret_2"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0571,
-      "earnings_in": 35,
+      "expected_move": 0.0464,
+      "earnings_in": 34,
       "earnings_date": "2026-10-28"
     },
     {
@@ -2407,21 +2407,21 @@
         0.0,
         0.0,
         0.0,
-        -0.3176,
-        0.2172,
-        0.066,
+        0.0,
+        0.0,
+        -0.0007,
         0.2131
       ],
-      "hit_rate": 0.6471,
-      "n_predictions": 85,
+      "hit_rate": 0.6512,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 sent_surprise",
         "\u2191 MACD"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0271,
-      "earnings_in": 7,
+      "expected_move": 0.0338,
+      "earnings_in": 6,
       "earnings_date": "2026-09-30"
     },
     {
@@ -2490,16 +2490,16 @@
         -0.0048,
         -0.0307
       ],
-      "hit_rate": 0.3176,
-      "n_predictions": 85,
+      "hit_rate": 0.3256,
+      "n_predictions": 86,
       "why": [
         "\u2191 bearish share",
         "\u2191 market return",
         "\u2193 sent_roll5"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0632,
-      "earnings_in": 61,
+      "expected_move": 0.0545,
+      "earnings_in": 60,
       "earnings_date": "2026-11-23"
     },
     {
@@ -2568,16 +2568,16 @@
         0.0,
         0.0
       ],
-      "hit_rate": 0.2471,
-      "n_predictions": 85,
+      "hit_rate": 0.2558,
+      "n_predictions": 86,
       "why": [
         "\u2191 market return",
         "\u2193 dow",
         "\u2193 VIX"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0137,
-      "earnings_in": 55,
+      "expected_move": 0.0196,
+      "earnings_in": 54,
       "earnings_date": "2026-11-17"
     },
     {
@@ -2637,25 +2637,25 @@
         0.0,
         0.0,
         0.0,
-        0.263,
-        0.2561,
-        0.0099,
+        0.0,
+        0.0,
+        -0.079,
         0.056,
         0.1641,
-        0.2918,
+        0.3017,
         0.0547,
         0.3585
       ],
-      "hit_rate": 0.5529,
-      "n_predictions": 85,
+      "hit_rate": 0.5581,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 sent_surprise",
         "\u2191 sent_roll10"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0359,
-      "earnings_in": 40,
+      "expected_move": 0.0322,
+      "earnings_in": 39,
       "earnings_date": "2026-11-02"
     },
     {
@@ -2714,7 +2714,7 @@
         0.0,
         0.0,
         0.0,
-        0.3416,
+        0.3418,
         0.2383,
         -0.0367,
         0.214,
@@ -2724,16 +2724,16 @@
         -0.0344,
         0.2607
       ],
-      "hit_rate": 0.3529,
-      "n_predictions": 85,
+      "hit_rate": 0.3605,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 sent_surprise",
         "\u2191 sent_roll10"
       ],
       "earnings_day": 0,
-      "expected_move": 0.045,
-      "earnings_in": 41,
+      "expected_move": 0.0346,
+      "earnings_in": 40,
       "earnings_date": "2026-11-03"
     },
     {
@@ -2783,35 +2783,35 @@
       "sentiment_spark": [
         0.0,
         0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0
+        -0.8251,
+        -0.205,
+        -0.9398,
+        -0.9578,
+        -0.2415,
+        -0.4335,
+        -0.0175,
+        -0.1801,
+        -0.8186,
+        0.3755,
+        -0.3742,
+        0.1891,
+        0.2418,
+        0.011,
+        0.2087,
+        0.1358,
+        0.2078,
+        -0.3251
       ],
-      "hit_rate": 0.5059,
-      "n_predictions": 85,
+      "hit_rate": 0.5116,
+      "n_predictions": 86,
       "why": [
         "\u2191 market return",
         "\u2193 dow",
         "\u2193 VIX"
       ],
       "earnings_day": 0,
-      "expected_move": 0.038,
-      "earnings_in": 40,
+      "expected_move": 0.0293,
+      "earnings_in": 39,
       "earnings_date": "2026-11-02"
     },
     {
@@ -2876,20 +2876,20 @@
         0.0,
         0.0,
         0.0,
-        0.2009,
-        -0.0128,
+        0.0,
+        -0.0146,
         0.027
       ],
-      "hit_rate": 0.4,
-      "n_predictions": 85,
+      "hit_rate": 0.407,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 market return",
         "\u2191 bearish share"
       ],
       "earnings_day": 0,
-      "expected_move": 0.018,
-      "earnings_in": 27,
+      "expected_move": 0.0256,
+      "earnings_in": 26,
       "earnings_date": "2026-10-20"
     },
     {
@@ -2945,8 +2945,8 @@
         0.0,
         0.0,
         0.0,
-        -0.361,
-        0.1237,
+        0.0,
+        0.0513,
         0.0794,
         0.2689,
         0.0847,
@@ -2958,16 +2958,16 @@
         0.1082,
         0.2577
       ],
-      "hit_rate": 0.3176,
-      "n_predictions": 85,
+      "hit_rate": 0.3256,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 sent_roll5",
         "\u2191 sent_roll10"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0273,
-      "earnings_in": 40,
+      "expected_move": 0.0217,
+      "earnings_in": 39,
       "earnings_date": "2026-11-02"
     },
     {
@@ -3030,7 +3030,7 @@
         0.0,
         0.0,
         0.0,
-        0.2872,
+        0.0877,
         -0.0097,
         0.218,
         0.1927,
@@ -3044,8 +3044,8 @@
         "\u2191 sent_roll5"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0297,
-      "earnings_in": 69,
+      "expected_move": 0.0265,
+      "earnings_in": 68,
       "earnings_date": "2026-12-01"
     },
     {
@@ -3107,23 +3107,23 @@
         0.0,
         0.0,
         0.0,
-        -0.4436,
-        -0.1188,
+        0.0,
+        0.3867,
         0.1546,
         0.0873,
         0.0072,
         -0.054
       ],
-      "hit_rate": 0.3176,
-      "n_predictions": 85,
+      "hit_rate": 0.3256,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 bearish share",
         "\u2191 market return"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0399,
-      "earnings_in": 76,
+      "expected_move": 0.0324,
+      "earnings_in": 75,
       "earnings_date": "2026-12-08"
     },
     {
@@ -3190,21 +3190,21 @@
         0.1876,
         -0.0076,
         0.2087,
-        -0.1791
+        -0.1588
       ],
-      "hit_rate": 0.3647,
-      "n_predictions": 85,
+      "hit_rate": 0.3721,
+      "n_predictions": 86,
       "why": [
         "\u2191 post volume",
         "\u2191 bearish share",
         "\u2191 sent_roll10"
       ],
       "earnings_day": 0,
-      "expected_move": 0.0276,
-      "earnings_in": 34,
+      "expected_move": 0.0256,
+      "earnings_in": 33,
       "earnings_date": "2026-10-27"
     }
   ],
   "disclaimer": "Experimental volatility radar \u2014 flags stocks likely to make an outsized move (either direction). Not a buy signal, not financial advice.",
-  "updated_at": "2026-09-23T00:30:42.657024+00:00"
+  "updated_at": "2026-09-24T00:45:42.303039+00:00"
 }
