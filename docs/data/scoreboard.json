@@ -33,6 +33,11 @@
       "n": 86
     },
     {
+      "ticker": "DIS",
+      "hit_rate": 0.1977,
+      "n": 86
+    },
+    {
       "ticker": "NFLX",
       "hit_rate": 0.1977,
       "n": 86
@@ -41,11 +46,6 @@
       "ticker": "QQQ",
       "hit_rate": 0.1977,
       "n": 86
-    },
-    {
-      "ticker": "DIS",
-      "hit_rate": 0.1882,
-      "n": 85
     },
     {
       "ticker": "JPM",
@@ -64,10 +64,10 @@
     "AVGO": 1,
     "BA": 0,
     "COIN": 2,
-    "COST": 0,
-    "CRM": 6,
+    "COST": 1,
+    "CRM": 7,
     "CSCO": 1,
-    "DIS": 0,
+    "DIS": 1,
     "GME": 1,
     "GOOGL": 1,
     "HOOD": 1,
@@ -98,7 +98,7 @@
   },
   "top_streak": {
     "ticker": "CRM",
-    "len": 6
+    "len": 7
   },
   "aggregate_hit_rate": 0.1339,
   "n_reconciled": 2450,
@@ -108,8 +108,8 @@
       "n": 86
     },
     "ABNB": {
-      "hit_rate": 0.3176,
-      "n": 85
+      "hit_rate": 0.314,
+      "n": 86
     },
     "ADBE": {
       "hit_rate": 0.3721,
@@ -144,20 +144,20 @@
       "n": 86
     },
     "COST": {
-      "hit_rate": 0.2,
-      "n": 85
+      "hit_rate": 0.2093,
+      "n": 86
     },
     "CRM": {
-      "hit_rate": 0.3529,
-      "n": 85
+      "hit_rate": 0.3605,
+      "n": 86
     },
     "CSCO": {
       "hit_rate": 0.314,
       "n": 86
     },
     "DIS": {
-      "hit_rate": 0.1882,
-      "n": 85
+      "hit_rate": 0.1977,
+      "n": 86
     },
     "GME": {
       "hit_rate": 0.2674,
