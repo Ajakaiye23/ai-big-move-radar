@@ -1,29 +1,29 @@
 {
-  "as_of": "2026-09-28",
-  "universe_sentiment": -0.0184,
+  "as_of": "2026-09-29",
+  "universe_sentiment": -0.0323,
   "top_bullish": [
-    "DIS",
-    "SOFI",
-    "ABNB"
+    "COST",
+    "SMCI",
+    "LCID"
   ],
   "top_bearish": [
-    "BA",
-    "JPM",
-    "UBER"
+    "NIO",
+    "PYPL",
+    "SHOP"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
     "tech": 1.0,
-    "consumer": 0.75,
-    "software": 1.0,
+    "consumer": 1.0,
+    "software": 0.6,
     "meme": 1.0,
-    "semis": 0.667,
+    "semis": 0.556,
     "industrial": 1.0,
     "crypto": 1.0,
     "media": 1.0,
-    "fintech": 1.0,
+    "fintech": 0.667,
     "financials": 1.0,
-    "auto": 0.75,
+    "auto": 1.0,
     "etf": 1.0
   }
 }
