@@ -1,28 +1,29 @@
 {
-  "as_of": "2026-10-06",
-  "universe_sentiment": 0.1307,
+  "as_of": "2026-10-07",
+  "universe_sentiment": 0.0142,
   "top_bullish": [
-    "INTC",
-    "QQQ",
-    "MRVL"
+    "PYPL",
+    "MSTR",
+    "SOFI"
   ],
   "top_bearish": [
-    "MSTR",
-    "ADBE",
-    "CSCO"
+    "NIO",
+    "RIVN",
+    "AMC"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
-    "tech": 0.25,
-    "software": 1.0,
-    "semis": 0.375,
     "consumer": 1.0,
+    "software": 0.4,
+    "meme": 0.5,
+    "semis": 0.667,
     "industrial": 1.0,
+    "crypto": 0.5,
+    "tech": 0.75,
     "media": 0.5,
-    "meme": 1.0,
+    "fintech": 0.667,
     "financials": 1.0,
-    "crypto": 0.0,
-    "etf": 1.0,
-    "auto": 1.0
+    "auto": 0.75,
+    "etf": 1.0
   }
 }
