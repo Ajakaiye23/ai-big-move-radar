@@ -1,27 +1,27 @@
 {
-  "as_of": "2026-10-19",
-  "universe_sentiment": -0.0046,
+  "as_of": "2026-10-20",
+  "universe_sentiment": 0.0517,
   "top_bullish": [
-    "AMD",
+    "CRM",
     "SMCI",
-    "NIO"
+    "AMC"
   ],
   "top_bearish": [
-    "PYPL",
-    "AMC",
-    "ADBE"
+    "COIN",
+    "RIVN",
+    "MRVL"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
     "tech": 1.0,
-    "consumer": 0.5,
-    "software": 0.6,
+    "consumer": 1.0,
+    "software": 0.8,
     "meme": 0.5,
-    "semis": 1.0,
-    "industrial": 0.0,
+    "semis": 0.778,
+    "industrial": 1.0,
     "crypto": 0.5,
     "media": 1.0,
-    "fintech": 0.667,
+    "fintech": 1.0,
     "financials": 1.0,
     "auto": 0.75,
     "etf": 1.0
