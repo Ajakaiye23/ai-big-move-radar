@@ -1,29 +1,29 @@
 {
-  "as_of": "2026-10-22",
-  "universe_sentiment": -0.0556,
+  "as_of": "2026-10-23",
+  "universe_sentiment": -0.0045,
   "top_bullish": [
-    "GME",
-    "NIO",
-    "RIVN"
+    "AMC",
+    "LCID",
+    "NIO"
   ],
   "top_bearish": [
-    "QQQ",
-    "AMD",
-    "MU"
+    "CRM",
+    "META",
+    "CSCO"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
-    "tech": 1.0,
+    "tech": 0.833,
     "consumer": 1.0,
-    "software": 0.8,
+    "software": 1.0,
     "meme": 1.0,
-    "semis": 1.0,
+    "semis": 0.889,
     "industrial": 1.0,
-    "crypto": 0.0,
+    "crypto": 1.0,
     "media": 1.0,
-    "fintech": 0.667,
+    "fintech": 1.0,
     "financials": 1.0,
-    "auto": 1.0,
+    "auto": 0.75,
     "etf": 1.0
   }
 }
