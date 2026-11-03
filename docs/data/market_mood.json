@@ -1,25 +1,25 @@
 {
-  "as_of": "2026-10-30",
-  "universe_sentiment": -0.0883,
+  "as_of": "2026-11-02",
+  "universe_sentiment": -0.0453,
   "top_bullish": [
-    "LCID",
-    "SMCI",
-    "PYPL"
+    "AMC",
+    "DIS",
+    "ABNB"
   ],
   "top_bearish": [
     "GME",
-    "SOFI",
-    "AMC"
+    "NIO",
+    "PLTR"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
     "tech": 1.0,
     "consumer": 1.0,
-    "software": 0.8,
-    "meme": 0.5,
+    "software": 1.0,
+    "meme": 1.0,
     "semis": 1.0,
-    "industrial": 0.0,
-    "crypto": 1.0,
+    "industrial": 1.0,
+    "crypto": 0.5,
     "media": 1.0,
     "fintech": 1.0,
     "financials": 1.0,
