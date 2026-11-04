@@ -1,15 +1,15 @@
 {
   "as_of": "2026-11-02",
-  "universe_sentiment": -0.0453,
+  "universe_sentiment": -0.029,
   "top_bullish": [
-    "AMC",
-    "DIS",
-    "ABNB"
+    "ABNB",
+    "ARM",
+    "DIS"
   ],
   "top_bearish": [
     "GME",
     "NIO",
-    "PLTR"
+    "SMCI"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
