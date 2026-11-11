@@ -1,29 +1,28 @@
 {
-  "as_of": "2026-11-09",
-  "universe_sentiment": -0.1085,
+  "as_of": "2026-11-10",
+  "universe_sentiment": -0.006,
   "top_bullish": [
-    "COIN",
-    "SMCI",
-    "NFLX"
+    "ADBE",
+    "BA",
+    "CSCO"
   ],
   "top_bearish": [
-    "LCID",
-    "NIO",
-    "BA"
+    "NFLX",
+    "MSTR",
+    "GME"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
-    "tech": 0.667,
-    "consumer": 0.25,
-    "software": 0.0,
-    "meme": 0.5,
-    "semis": 0.222,
-    "industrial": 0.0,
-    "crypto": 0.5,
-    "media": 0.5,
-    "fintech": 0.333,
-    "financials": 0.0,
-    "auto": 0.25,
-    "etf": 0.0
+    "tech": 0.75,
+    "software": 0.667,
+    "semis": 0.5,
+    "consumer": 1.0,
+    "industrial": 1.0,
+    "media": 1.0,
+    "meme": 1.0,
+    "financials": 1.0,
+    "crypto": 1.0,
+    "etf": 0.5,
+    "auto": 0.0
   }
 }
