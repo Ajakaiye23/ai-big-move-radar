@@ -1,27 +1,28 @@
 {
-  "as_of": "2026-11-12",
-  "universe_sentiment": 0.0217,
+  "as_of": "2026-11-13",
+  "universe_sentiment": -0.1418,
   "top_bullish": [
-    "PLTR",
-    "MSTR",
-    "DIS"
+    "ORCL",
+    "WMT",
+    "NFLX"
   ],
   "top_bearish": [
-    "NIO",
-    "SHOP",
-    "QQQ"
+    "GME",
+    "QCOM",
+    "CRM"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
+    "tech": 0.5,
+    "software": 0.667,
+    "semis": 0.375,
     "consumer": 1.0,
-    "industrial": 1.0,
-    "crypto": 1.0,
+    "industrial": 0.0,
     "media": 1.0,
-    "fintech": 0.333,
+    "meme": 1.0,
     "financials": 1.0,
-    "auto": 1.0,
-    "software": 0.0,
-    "etf": 0.5,
-    "tech": 1.0
+    "crypto": 1.0,
+    "etf": 1.0,
+    "auto": 1.0
   }
 }
