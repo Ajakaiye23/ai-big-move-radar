@@ -1,29 +1,29 @@
 {
-  "as_of": "2026-11-16",
-  "universe_sentiment": -0.1425,
+  "as_of": "2026-11-17",
+  "universe_sentiment": -0.1644,
   "top_bullish": [
-    "GME",
-    "NIO",
-    "CRM"
+    "PYPL",
+    "COIN",
+    "GME"
   ],
   "top_bearish": [
-    "NFLX",
-    "MSTR",
-    "SHOP"
+    "CRM",
+    "AMC",
+    "RIVN"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
-    "tech": 0.5,
-    "consumer": 1.0,
-    "software": 0.4,
+    "tech": 1.0,
+    "consumer": 0.75,
+    "software": 1.0,
     "meme": 1.0,
-    "semis": 0.556,
-    "industrial": 0.0,
+    "semis": 1.0,
+    "industrial": 1.0,
     "crypto": 1.0,
-    "media": 0.5,
-    "fintech": 0.333,
+    "media": 1.0,
+    "fintech": 1.0,
     "financials": 1.0,
-    "auto": 0.5,
+    "auto": 1.0,
     "etf": 1.0
   }
 }
