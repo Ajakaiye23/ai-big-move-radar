@@ -1,29 +1,29 @@
 {
-  "as_of": "2026-11-20",
-  "universe_sentiment": -0.1529,
+  "as_of": "2026-11-23",
+  "universe_sentiment": -0.0607,
   "top_bullish": [
-    "RIVN",
-    "ABNB",
-    "NIO"
+    "PLTR",
+    "AMC",
+    "BA"
   ],
   "top_bearish": [
-    "AMC",
-    "BA",
-    "PLTR"
+    "ADBE",
+    "MSTR",
+    "PYPL"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
-    "tech": 0.833,
-    "consumer": 0.75,
-    "software": 1.0,
-    "meme": 1.0,
-    "semis": 1.0,
+    "tech": 0.167,
+    "consumer": 0.0,
+    "software": 0.4,
+    "meme": 0.5,
+    "semis": 0.333,
     "industrial": 0.0,
     "crypto": 1.0,
-    "media": 1.0,
-    "fintech": 1.0,
-    "financials": 1.0,
-    "auto": 0.75,
-    "etf": 1.0
+    "media": 0.0,
+    "fintech": 0.333,
+    "financials": 0.0,
+    "auto": 0.5,
+    "etf": 0.5
   }
 }
