@@ -1,29 +1,29 @@
 {
-  "as_of": "2026-11-23",
-  "universe_sentiment": -0.0607,
+  "as_of": "2026-11-24",
+  "universe_sentiment": -0.1062,
   "top_bullish": [
-    "PLTR",
-    "AMC",
-    "BA"
+    "ABNB",
+    "JPM",
+    "ADBE"
   ],
   "top_bearish": [
-    "ADBE",
-    "MSTR",
-    "PYPL"
+    "AMC",
+    "ARM",
+    "HOOD"
   ],
   "upcoming_earnings": [],
   "sector_heatmap": {
-    "tech": 0.167,
-    "consumer": 0.0,
+    "tech": 0.5,
+    "consumer": 0.5,
     "software": 0.4,
     "meme": 0.5,
-    "semis": 0.333,
-    "industrial": 0.0,
+    "semis": 0.667,
+    "industrial": 1.0,
     "crypto": 1.0,
-    "media": 0.0,
-    "fintech": 0.333,
-    "financials": 0.0,
+    "media": 1.0,
+    "fintech": 0.667,
+    "financials": 1.0,
     "auto": 0.5,
-    "etf": 0.5
+    "etf": 1.0
   }
 }
