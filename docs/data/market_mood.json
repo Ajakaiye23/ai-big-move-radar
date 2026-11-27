@@ -1,14 +1,14 @@
 {
   "as_of": "2026-11-25",
-  "universe_sentiment": -0.1462,
+  "universe_sentiment": -0.0972,
   "top_bullish": [
-    "HOOD",
     "QCOM",
+    "NIO",
     "DIS"
   ],
   "top_bearish": [
-    "NIO",
     "LCID",
+    "RIVN",
     "ORCL"
   ],
   "upcoming_earnings": [],
